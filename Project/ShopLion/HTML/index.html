@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LionShop</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- boxicons -->
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <!-- app css -->
+    <link rel="stylesheet" href="../Css/gird.css">
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="/splide-2.4.21/dist/css/splide-core.min.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu bg-second">
+            <a href="../HTML/index.html" class="mb-logo">LionShop</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle" id="mb-menu-close">
+                <i class="fas header-close fa-times"></i>
+            </span>
+            <!-- top header -->
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li>
+                            <a href="#">080-6582-6078</a>
+                        </li>
+                        <li>
+                            <a href="#">thanhlion1998@mail.com</a>
+                        </li>
+                    </ul>
+                    <ul class="devided">
+                        <li class="dropdown">
+                            <a href="">$USD</a>
+                            <i class="fas fa-angle-down"></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">₫VND</a></li>
+                                <li><a href="#">¥JPY</a></li>
+                                <li><a href="#">€EUR</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <img src="../images/Hoa-Kỳ.png" alt="">
+                            <a href="">USA</a>
+                            <i class="fas fa-angle-down"></i>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <img src="../images/vietnam.png" alt="">
+                                    <a href="#">VIETNAMESE</a>
+                                </li>
+                                <li>
+                                    <img src="../images/japan.png" alt="">
+                                    <a href="#">JAPANESE</a>
+                                </li>
+                                <li>
+                                    <img src="../images/franch.png" alt="">
+                                    <a href="#">FRENCH</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ORDER TRACKING</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end top header -->
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="../HTML/index.html" class="logo">LionShop</a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li><a href="#modul_overlay"><i class="fas fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- signin/signup form -->
+            <div class="modulboss">
+                <div class="modul_overlay" id="modul_overlay">
+                    <div class="auth_form">
+                        <a href="#" class="modul_overlay-close"></a>
+                        <a href="#"><i class="fas signup-close fa-times"></i></a>
+                        <div class="auth_form-container" id="auth_form-container">
+                            <div class="form-container sign-up-container">
+                                <form class="auth_form-form" action="#">
+                                    <h1>Create Account</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <span>or use your email for registration</span>
+                                    <input class="auth_form-input" type="text" placeholder="Name" />
+                                    <input class="auth_form-input" type="email" placeholder="Email" />
+                                    <input class="auth_form-input" type="password" placeholder="Password" />
+                                    <button class="auth_form-button">Sign Up</button>
+                                </form>
+                            </div>
+                            <div class="form-container sign-in-container">
+                                <form class="auth_form-form" action="#">
+                                    <h1>Sign in</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <span>or use your account</span>
+                                    <input class="auth_form-input" type="email" placeholder="Email" />
+                                    <input class="auth_form-input" type="password" placeholder="Password" />
+                                    <a href="#">Forgot your password?</a>
+                                    <button class="auth_form-button">Sign In</button>
+                                </form>
+                            </div>
+                            <div class="overlay-container">
+                                <div class="overlay">
+                                    <div class="overlay-panel overlay-left">
+                                        <h1>Welcome Back!</h1>
+                                        <p>To keep connected with us please login with your personal info</p>
+                                        <button class="ghost auth_form-button" id="signIn">Sign In</button>
+                                    </div>
+                                    <div class="overlay-panel overlay-right">
+                                        <h1>Hello, Friend!</h1>
+                                        <p>Enter your personal details and start journey with us</p>
+                                        <button class="ghost auth_form-button" id="signUp">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="../HTML/product.html"><i class="fas fa-home"></i> home</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="../HTML/product.html">Shop <i class="fas fa-angle-down"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="#">SONY Music</a></li>
+                                                <li><a href="#">SONY Camera</a></li>
+                                                <li><a href="#">SONY Movies & TV Shows </a></li>
+                                                <li><a href="#">SONY Lens</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="#">SONY Music</a></li>
+                                                <li><a href="#">SONY Camera</a></li>
+                                                <li><a href="#">SONY Movies & TV Shows </a></li>
+                                                <li><a href="#">SONY Lens</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="#">SONY Music</a></li>
+                                                <li><a href="#">SONY Camera</a></li>
+                                                <li><a href="#">SONY Movies & TV Shows </a></li>
+                                                <li><a href="#">SONY Lens</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="#">SONY Music</a></li>
+                                                <li><a href="#">SONY Camera</a></li>
+                                                <li><a href="#">SONY Movies & TV Shows </a></li>
+                                                <li><a href="#">SONY Lens</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row img-row">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <!-- <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
+                                                alt=""> -->
+                                            <img src="../images/bucket_ILCE7CLB_0000_001_6b06bfe60c043489cbc8f4ce0de673ae_1.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="../images/bucket_ILCE-9M2_0000_00_4f10d1a562c24b00635b2a458dea12fa_1.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="../images/bucket_ILCE7CLS_0000_001_172b1dc5dda9eaadc1467eef86b154a5_1.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="../images/bucket_ILCE7RM4_0000_001_7eff88fc0c7084cc40d088ec2a70f94c_1.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="../HTML/product-detail.html">blog</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="slider">
+            <div class="container">
+                <!-- slide item -->
+                <div class="slide active">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                SONY α7R IV（ILCE-7RM4A）
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2 info-content-h2">
+                                Sony Design
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Equipped with a back-illuminated CMOS sensor with approximately 61 million effective
+                                pixels, it achieves overwhelming descriptive power without a full-size mirror. We have
+                                reviewed every detail to support high-resolution shooting, such as a new shutter unit,
+                                shock absorbing damper, and advanced camera shake correction, which does not allow
+                                minute vibrations. </p>
+                            <div class="top-down trans-delay-0-6 info-content-delay">
+                                <button class="btn-flat btn-hover">
+                                    <span>shop now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img top-down">
+                        <img src="../images/bucket_006_SEL14F18GM.png" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                TV OLED SONY 4K HDR XR™
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2 info-content-h2">
+                                TOP MOVIES
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                With BRAVIA CORE, you are subscribed to an amazing selection of movies to stream anytime
+                                and as many times as you like, in up to 4K HDR quality.2 3
+                            </p>
+                            <div class="top-down trans-delay-0-6 info-content-delay">
+                                <button class="btn-flat btn-hover">
+                                    <span>shop now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img right-left">
+                        <img src="../images/TVSONY.png" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                G MASTER FE 100-400mm
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2 info-content-h2">
+                                TELE ZOOM LENS
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Premium G Master series super telephoto zoom lens.
+                                Linear motor and Direct Drive SSM (DDSSM) for agile, highly precise focus lens control.
+                                Sony Nano AR Coating to eliminate flare and ghosting.
+                                Circular 9-blade aperture for beautiful defocus effects.
+                                Dust and moisture resistant design.
+                            <div class="top-down trans-delay-0-6 info-content-delay">
+                                <button class="btn-flat btn-hover">
+                                    <span>shop now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img left-right">
+                        <img src="../images/bucket_SEL200600G_0000_aa4c806667bb613cd7fbc9fa6ed7c6a3_1.png" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+            </div>
+            <!-- slider controller -->
+            <button class="slide-controll slide-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="slide-controll slide-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <!-- end slider controller -->
+        </div>
+    </div>
+    <!-- end hero section -->
+
+    <!-- promotion section -->
+    <div class="promotion">
+        <div class="row">
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>SONYα7R IV Full-frame</h3>
+                        <button class="btn-flat btn-hover"><span>shop collection</span></button>
+                    </div>
+                    <img src="../images/bucket_ILCE7RM4_0000_001_7eff88fc0c7084cc40d088ec2a70f94c_1.png" alt="">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>SONYα7C Tele Zoom</h3>
+                        <button class="btn-flat btn-hover"><span>shop collection</span></button>
+                    </div>
+                    <img src="../images/bucket_ILCE7CLS_0000_001_172b1dc5dda9eaadc1467eef86b154a5_1.png" alt="">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>SONYα9 IV Zoom Lens</h3>
+                        <button class="btn-flat btn-hover"><span>shop collection</span></button>
+                    </div>
+                    <img src="../images/bucket_ILCE-9M2_0000_00_4f10d1a562c24b00635b2a458dea12fa_1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end promotion section -->
+
+    <!-- product list -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest product</h2>
+            </div>
+            <!-- HTML + JS -->
+            <div class="row" id="latest-products">
+                <!-- <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="../images/bucket_SEL100400GM_0000_8ff00e4b015cefaaffa2c79dccc1f65c_1.png" alt="">
+                            <img src="../images/bucket_SEL200600G_0000_aa4c806667bb613cd7fbc9fa6ed7c6a3_1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <button class="btn-flat btn-hover btn-shop-now">shop now</button>
+                                <button class="btn-flat btn-hover btn-cart-add">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                                <button class="btn-flat btn-hover btn-cart-add">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-card-name">
+                                Lens Zoom G17-200mm
+                            </div>
+                            <div class="product-card-price">
+                                <span><del>$300</del></span>
+                                <span class="curr-price">$200</span>
+                            </div>
+                        </div>
+                        <span class="product-card-info-span span-x span-x-top"></span>
+                        <span class="product-card-info-span span-x span-x-bottom"></span>
+                        <span class="product-card-info-span span-y y-left"></span>
+                        <span class="product-card-info-span span-y y-right"></span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="section-footer">
+                <a href="../HTML/product.html" class="btn-flat btn-hover">view all</a>
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+
+    <!-- special product -->
+    <div class="bg-second">
+        <div class="section container">
+            <div class="row">
+                <div class="col-5 col-md-4">
+                    <div class="sp-item-img">
+                        <img src="../images/bucket_ILCE7RM4_0000_001_7eff88fc0c7084cc40d088ec2a70f94c_1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7 col-md-8">
+                    <div class="sp-item-info">
+                        <div class="sp-item-name">SONYα7R MARK IV</div>
+                        <p class="sp-item-description">
+                            Virtuoso expression. Sony’s full-frame mirrorless α7R IV reveals ever more overwhelming
+                            photographic vision, with expressive prowess once expected only in medium-format cameras,
+                            and remarkably high speed in a compact body. See how its enhanced rigidity and connectivity
+                            raise your productivity.
+                        </p>
+                        <button class="btn-flat btn-hover"><a href="../HTML/product-detail.html">shop now</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end special product -->
+
+    <!-- Product list to slide -->
+    <div class="section">
+        <div class="section_container">
+            <div class="section_container-left col-4">
+                <div class="container-left-content">
+                    <h1>best selling lens models</h1>
+                    <p>We offer the best lenses to suit the needs of our customers. Securing the latest technology.</p>
+                    <a href="../HTML/product.html" class="btn-flat btn-hover">view all</a>
+                </div>
+            </div>
+            <div class="section_container-right col-8">
+                    <div class="splide project-area">
+                        <div class="splide__track project_container">
+                            <ul class="splide__list">
+                            </ul>
+                        </div>
+                        <div class="splide__progress">
+                            <div class="splide__progress__bar">
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="section">
+        <div class="section_container">
+            <div class="section_container-left col-4">
+                <div class="container-left-content">
+                    <h1>best selling lens models</h1>
+                    <p>We offer the best lenses to suit the needs of our customers. Securing the latest technology</p>
+                    <a href="../HTML/product.html" class="btn-flat btn-hover">view all</a>
+                </div>
+            </div>
+            <div class="section_container-right col-8">
+                <div class="container-right">
+                    <div class="container-right-boss splide">
+                        <div class="container-right-expose2" id="splide">
+                            <div class="col-3 col-md-6 col-sm-12">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="../images/bucket_SEL100400GM_0000_8ff00e4b015cefaaffa2c79dccc1f65c_1.png"
+                                            alt="">
+                                        <img src="../images/bucket_SEL200600G_0000_aa4c806667bb613cd7fbc9fa6ed7c6a3_1.png"
+                                            alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now">shop now</button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class="fas fa-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Lens Zoom G17-200mm
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>$300</del></span>
+                                            <span class="curr-price">$200</span>
+                                        </div>
+                                        <span class="product-card-info-span span-y span-y-top"></span>
+                                        <span class="product-card-info-span span-y span-y-bottom"></span>
+                                        <span class="product-card-info-span span-x x-left"></span>
+                                        <span class="product-card-info-span span-x x-right"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-md-6 col-sm-12 cap1">
+                                <div class="product-card">
+                                    <div class="product-card-img">
+                                        <img src="../images/bucket_SEL35F14GM_0000_001_0873f5a12fc94dde762c2a82fbe58284_2.png"
+                                            alt="">
+                                        <img src="../images/bucket_SEL35F14GM_0002_003_fae7af0d714a09d1d4399169f2ebbaad_1.png"
+                                            alt="">
+                                    </div>
+                                    <div class="product-card-info">
+                                        <div class="product-btn">
+                                            <button class="btn-flat btn-hover btn-shop-now">shop now</button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                            <button class="btn-flat btn-hover btn-cart-add">
+                                                <i class="fas fa-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="product-card-name">
+                                            Lens Zoom G17-200mm
+                                        </div>
+                                        <div class="product-card-price">
+                                            <span><del>$300</del></span>
+                                            <span class="curr-price">$200</span>
+                                        </div>
+                                        <span class="product-card-info-span span-y span-y-top"></span>
+                                        <span class="product-card-info-span span-y span-y-bottom"></span>
+                                        <span class="product-card-info-span span-x x-left"></span>
+                                        <span class="product-card-info-span span-x x-right"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- product list -->
+    <!-- <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>best selling</h2>
+            </div>
+            <div class="row" id="best-products">
+            </div>
+            <div class="section-footer">
+                <a href="../HTML/product.html" class="btn-flat btn-hover">view all</a>
+            </div>
+        </div>
+    </div> -->
+    <!-- end product list -->
+
+    <!-- SUPPORT -->
+    <div class="">
+        <div class="container container-support">
+            <div class="container-support-top">
+                <img src="../images/1-click-demo-lagar-1.svg" alt="">
+            </div>
+            <div class="container-support-bottom">
+                <div class="col-3 col-md-6 col-sm-12 support-content">
+                    <div>
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div>
+                        <h3>Free home delivery</h3>
+                        <p>Provide free home delivery for the all product over $100</p>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12 support-content">
+                    <div>
+                        <i class="fab fa-viacoin"></i>
+                    </div>
+                    <div>
+                        <h3>Quality Products</h3>
+                        <p>We ensure the product quality that is our main goal</p>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12 support-content">
+                    <div>
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <div>
+                        <h3>3 Days Return</h3>
+                        <p>Our Return Policy is very simple and easy for all</p>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12 support-content">
+                    <div>
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <h3>Online Support</h3>
+                        <p>Provide 24/7 online support for any information</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blogs -->
+    <div class="" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>latest blog</h2>
+            </div>
+            <div class="blog row-revere">
+                <div class="blog-img">
+                    <iframe src="https://www.youtube.com/embed/H0om2qHS1o4" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="blog-info">
+                    <div class="blog-title">
+                        Introducing Alpha 1 | Sony | α
+                    </div>
+                    <div class="blog-preview">
+                        The Alpha 1 offers an extraordinary combination of high resolution and blazing speed. Ultra-fast
+                        readout from the 50.1 MP sensor allows continuous bursts at up to 30 fps* with AF and AE
+                        tracking using the electronic shutter. Perfect for any situation where the critical action is
+                        over in an instant.
+                    </div>
+                    <button class="btn-flat btn-hover">read more</button>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-img">
+                    <img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt="">
+                </div>
+                <div class="blog-info">
+                    <div class="blog-title">
+                        Another Milestone
+                    </div>
+                    <div class="blog-preview">
+                        full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
+                        resolution, fine gradation, and low noise to open entirely new dimensions of detail just as pro
+                        photographers expect. The α7R IV captures the mood of each scene and the texture of subjects.
+                    </div>
+                    <button class="btn-flat btn-hover">read more</button>
+                </div>
+            </div>
+            <div class="blog row-revere">
+                <div class="blog-img">
+                    <img src="../images/1200_540_anshin-program_mainvisual.jpg" alt="">
+                </div>
+                <div class="blog-info">
+                    <div class="blog-title">
+                        Ever more inspiring
+                    </div>
+                    <div class="blog-preview">
+                        Enter a whole new world of photographic expression with incomparable image quality and
+                        processing speed. A powerful new choice joins the α7R series with ever more advanced
+                        connectivity and enhanced reliability demanded by pros.
+                    </div>
+                    <button class="btn-flat btn-hover">read more</button>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn-flat btn-hover">view all</a>
+            </div>
+        </div>
+    </div>
+    <!-- end blogs -->
+
+    <!-- footer -->
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row footer-mobile">
+                <div class="col-3 col-md-6 col-sm-12 footer-mobile-contact ">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            LionShop
+                        </h3>
+                        <ul class="contact-socials">
+                            <li><a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a></li>
+                            <li><a href="mailto:thanhlion1998@gmail.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a></li>
+                        </ul>
+                        <ul class="contact-socials-img">
+                            <li><a href="#">
+                                    <img src="../images/footer-cards-img.png" alt="">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../images/footer-cards-img-02.png" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <input type="email" placeholder="ENTER YOUR EMAIL">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 footer-content">
+                    <h3 class="footer-head">Products</h3>
+                    <ul class="menu">
+                        <li><a href="#">B2B Premium Incentive</a></li>
+                        <li><a href="#">Play Station</a></li>
+                        <li><a href="#">Sony Pictures</a></li>
+                        <li><a href="#">Sony Music</a></li>
+                        <li><a href="#">Professional Products & Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 footer-content">
+                    <h3 class="footer-head">News & Info</h3>
+                    <ul class="menu">
+                        <li><a href="#">Product Support</a></li>
+                        <li><a href="#">Electronics Registration</a></li>
+                        <li><a href="#">Product Manuals</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Electronics Newsletter</a>
+                </div>
+                <div class="col-3 col-md-6 footer-content">
+                    <h3 class="footer-head">support</h3>
+                    <ul class="menu">
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Contact US</a></li>
+                        <li><a href="#">Product Help</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="container foot-boss">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/thanhlion.1998/">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <span> - Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span> - Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                    <span> - Youtube</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span> - Instagram</span>
+                </a>
+            </li>
+    </div>
+    <!-- end footer -->
+
+    <!-- app js -->
+    <script src="../JS/app.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/signUp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="my_jquery_functions.js"></script>
+    <script src="/splide-2.4.21/dist/js/splide.min.js"></script>
+    <script src="../JS/splide.js"></script>
+
+</body>
+
+</html>
