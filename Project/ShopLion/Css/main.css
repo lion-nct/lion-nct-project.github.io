@@ -66,6 +66,69 @@ h1 {
 .bg-main {
   background-color: var(--main-bg-color);
 }
+/* header */
+.container_boss{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+  
+}
+.container_header-left{
+  overflow: hidden;
+  position: relative;
+  background-color: var(--red);
+}
+.logo {
+  color: white;
+  font-size: 40px;
+  font-weight: 650;
+}
+.container_header-left::before{
+  position: absolute;
+  content: "";
+  border: 72px solid;
+  border-color: transparent white transparent transparent;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.container_header-right{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 100px 0 0;
+}
+.main-menu {
+  padding:0;
+  margin: 0;
+  display: flex;
+}
+
+.main-menu > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 600;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.main-menu > li {
+  border-bottom: 2px solid transparent;
+}
+
+.main-menu > li:hover {
+  border-bottom: 2px solid var(--hover-color);
+}
+.main-menu a:hover {
+  color: var(--hover-color);
+}
+
+
+
 
 .text-red {
   color: var(--red);
@@ -161,10 +224,7 @@ ul.devided > li:last-child {
   background-color: var(--main-bg-color);
 }
 
-.logo {
-  font-size: 40px;
-  font-weight: 700;
-}
+
 
 .mb-logo {
   font-size: 25px;
@@ -197,17 +257,6 @@ ul.devided > li:last-child {
   font-size: 20px;
 }
 
-.user-menu {
-  display: flex;
-}
-
-.user-menu > li > a {
-  font-size: 20px;
-  margin-right: 22px;
-}
-.user-menu > li > a:hover {
-  color: var(--hover-color);
-}
 
 .bottom-header {
   display: flex;
@@ -215,31 +264,6 @@ ul.devided > li:last-child {
   justify-content: center;
 }
 
-.main-menu {
-  display: flex;
-  height: var(--bottom-header-size);
-}
-
-.main-menu > li > a {
-  display: flex;
-  align-items: center;
-  margin: 0 20px;
-  font-weight: 600;
-  height: 100%;
-  text-transform: uppercase;
-}
-
-.main-menu > li {
-  border-bottom: 2px solid transparent;
-  border-top: 2px solid transparent;
-}
-
-.main-menu > li:hover {
-  border-bottom: 2px solid var(--hover-color);
-}
-.main-menu a:hover {
-  color: var(--hover-color);
-}
 
 /* mega menu */
 
@@ -251,7 +275,7 @@ ul.devided > li:last-child {
   background-color: var(--main-bg-color);
   width: 100%;
   top: calc(100% + 100px);
-  z-index: 2;
+  z-index: 999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
   transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -508,7 +532,9 @@ ul.devided > li:last-child {
 .promotion [class*="col-"] {
   padding: 15px;
 }
-
+.row_boss-box{
+  height:570px;
+}
 .promotion-box {
   display: flex;
   background-color: var(--third-bg-color);
@@ -559,11 +585,11 @@ ul.devided > li:last-child {
   width: 100%;
   height: 600px;
   display: flex;
-  margin-left: 176px;
+  margin-left: 0px;
 }
 .section_container-left {
   text-align: left;
-  padding: 0 60px 0 50px;
+  padding: 0 60px 0 150px;
   background-color: rgb(192, 192, 192, 0.3);
 }
 .container-left-content {
@@ -1832,4 +1858,8 @@ footer ul li {
   .support-content:nth-child(1),.support-content:nth-child(3){
     border-right:0;
   }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+
 }
