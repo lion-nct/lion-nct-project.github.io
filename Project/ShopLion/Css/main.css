@@ -1552,12 +1552,12 @@ width: 100%;
 
   .slide-next,
   .slider:hover .slide-next {
-    right: 40%;
+    right: 36%;
   }
 
   .slide-prev,
   .slider:hover .slide-prev {
-    left: 40%;
+    left: 36%;
   }
 
   .slide-next,
@@ -1910,6 +1910,7 @@ width: 100%;
   .promotion-box {
     display: block;
     text-align: center;
+    padding-bottom: 20px;
   }
   .promotion-box .text {
     padding: 20px 20px 0 20px;
@@ -1918,7 +1919,22 @@ width: 100%;
     display: none;
   }
   .promotion-box .box-mb-button {
+    position: relative;
+    margin: 0 auto;
     display: block;
+}
+.mb-product{
+  text-align:center;
+}
+.sp-item-info,.blog-info{
+  padding:0 10px;
+}
+.section{
+  padding:0;
+}
+.subscribe input {
+  width: auto;
+}
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
