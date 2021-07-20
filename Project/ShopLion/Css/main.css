@@ -1899,7 +1899,7 @@ width: 100%;
 .social-container a:hover {
   color: var(--hover-color);
 }
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 375px) and (max-width: 750px) {
   .support-content:nth-child(1),
   .support-content:nth-child(3) {
     border-right: 0;
