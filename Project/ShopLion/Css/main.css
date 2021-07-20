@@ -93,6 +93,9 @@ h1 {
   font-size: 40px;
   font-weight: 650;
 }
+.logo:hover{
+  color:white;
+}
 .container_header-left::before {
   position: absolute;
   content: "";
@@ -798,6 +801,7 @@ ul.devided > li:last-child {
 }
 
 .sp-item-description {
+  padding-right: 30px;
   margin-bottom: 60px;
   text-align: justify;
 }
@@ -1934,6 +1938,12 @@ width: 100%;
 }
 .subscribe input {
   width: auto;
+}
+.sp-item-name{
+  font-size: 30px;
+}
+.sp-item-description{
+  margin-bottom: 30px;
 }
 }
 

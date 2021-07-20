@@ -26,7 +26,7 @@
 
 new Splide( '.splide', {
 	type        : 'loop',
-	perPage     : 2,
+	perPage     : 3,
 	autoplay    : true,
 	pauseOnHover: false,
 } ).mount();
