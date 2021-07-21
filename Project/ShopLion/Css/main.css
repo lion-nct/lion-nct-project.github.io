@@ -54,7 +54,13 @@ h2,
 h1 {
   text-transform: uppercase;
 }
-
+#fb-root{
+  z-index:9999;
+  background-color: #53b9e0;
+}
+.fb_reset{
+background-color:red;
+}
 .container {
   max-width: 1366px;
   margin: auto;
