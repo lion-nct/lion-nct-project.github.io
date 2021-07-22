@@ -1963,16 +1963,19 @@ width: 100%;
 .auth_form-container{
   position: relative;
   left: -8px;;
-  width: 350px;
+  width: 300px;
   height: 500px;
 }
 .sign-in-container,.sign-up-container{
  width: 100%;
 }
+.auth_form-form{
+  padding: 0 16px;
+}
 .signup-close {
   position: relative;
   top: -258px;
-  left: 366px;
+  left: 310px;
   font-size: 24px;
 }
 }
