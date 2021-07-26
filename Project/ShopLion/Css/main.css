@@ -1351,7 +1351,9 @@ footer ul li {
 .foot-boss ul li:hover:nth-child(4) a:after {
   background: #e46880;
 }
-
+.singup-mb{
+  display: none;
+}
 /* responsive */
 
 @media only screen and (max-width: 1280px) {
@@ -1966,7 +1968,7 @@ width: 100%;
   width: 300px;
   height: 460px;
 }
-.sign-in-container,.sign-up-container{
+.form-container{
  width: 100%;
 }
 .auth_form-form{
@@ -1977,6 +1979,23 @@ width: 100%;
   top: -258px;
   left: 310px;
   font-size: 24px;
+}
+.singup-mb{
+  display: block;
+}
+.singup-mb:active .sign-up-container{
+  opacity: 1;
+  z-index: 999;
+  transform: translateY(0%);
+}
+.singup-mb:hover{
+  cursor: pointer;
+  color: var(--hover-color)
+}
+.sign-up-container{
+  opacity: 1;
+  transform: translateY(-100%);
+  z-index: 0;
 }
 }
 
