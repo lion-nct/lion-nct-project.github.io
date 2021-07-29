@@ -128,7 +128,7 @@ var product_list = document.querySelector("#latest-products");
 
 products.forEach((e) => {
   var prod = `
-        <div class="col-3 col-md-6 col-sm-12">
+        <div class="col-3 col-md-6 col-sm-12" data-aos="zoom-in-up" data-aos-duration="1200">
             <div class="product-card">
                 <div class="product-card-img">
                     <img src="${e.image1}" alt="">

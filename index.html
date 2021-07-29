@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./Project/ShopLion/Css/main.css">
     <link rel="icon" href="./Project/ShopLion/images/logo.png">
     <link rel="stylesheet" href="./Project/splide-2.4.21/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css"> -->
 </head>
 
 <body>
@@ -384,7 +386,7 @@
     <!-- promotion section -->
     <div class="promotion">
         <div class="row">
-            <div class="col-4 col-md-12 col-sm-12 aaaaaa">
+            <div class="col-4 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="600">
                 <div class="promotion-box">
                     <div class="text">
                         <h3>SONYα7R IV Full-frame</h3>
@@ -395,7 +397,7 @@
                     <button class="btn-flat btn-hover box-mb-button"><span>shop collection</span></button>
                 </div>
             </div>
-            <div class="col-4 col-md-12 col-sm-12">
+            <div class="col-4 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1200">
                 <div class="promotion-box">
                     <div class="text">
                         <h3>SONYα7C Tele Zoom</h3>
@@ -406,7 +408,7 @@
                     <button class="btn-flat btn-hover box-mb-button"><span>shop collection</span></button>
                 </div>
             </div>
-            <div class="col-4 col-md-12 col-sm-12">
+            <div class="col-4 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1800">
                 <div class="promotion-box">
                     <div class="text">
                         <h3>SONYα9 IV Zoom Lens</h3>
@@ -425,7 +427,7 @@
     <div class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Latest product</h2>
+                <h2 data-aos="flip-right" data-aos-duration="1000">Latest product</h2>
             </div>
             <!-- HTML + JS -->
             <div class="row" id="latest-products">
@@ -472,21 +474,22 @@
         <div class="section container">
             <div class="row mb-product">
                 <div class="col-5 col-md-4 col-sm-12">
-                    <div class="sp-item-img">
+                    <div class="sp-item-img" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
                         <img src="./Project/ShopLion/images/bucket_ILCE7RM4_0000_001_7eff88fc0c7084cc40d088ec2a70f94c_1.png"
                             alt="">
                     </div>
                 </div>
                 <div class="col-7 col-md-8 col-sm-12">
                     <div class="sp-item-info">
-                        <div class="sp-item-name">SONYα7R MARK IV</div>
-                        <p class="sp-item-description">
+                        <div class="sp-item-name" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine">SONYα7R MARK IV</div>
+                        <p class="sp-item-description" data-aos="fade-up" data-aos-duration="800">
                             Virtuoso expression. Sony’s full-frame mirrorless α7R IV reveals ever more overwhelming
                             photographic vision, with expressive prowess once expected only in medium-format cameras,
                             and remarkably high speed in a compact body. See how its enhanced rigidity and connectivity
                             raise your productivity.
                         </p>
-                        <button class="btn-flat btn-hover"><a href="./Project/ShopLion/HTML/product-detail.html">shop
+                        <button class="btn-flat btn-hover" data-aos="fade-up" data-aos-duration="900"><a
+                                href="./Project/ShopLion/HTML/product-detail.html">shop
                                 now</a></button>
                     </div>
                 </div>
@@ -499,7 +502,8 @@
     <div class="section">
         <div class="section_container">
             <div class="section_container-left col-5">
-                <div class="container-left-content">
+                <div class="container-left-content" data-aos="fade-up"
+                >
                     <h1>best selling lens models</h1>
                     <p>We offer the best lenses to suit the needs of our customers. Securing the latest technology.</p>
                     <a href="./Project/ShopLion/HTML/product.html" class="btn-flat btn-hover">view all</a>
@@ -757,6 +761,12 @@
     <!-- end footer -->
 
     <!-- app js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
     <script src="./Project/ShopLion/JS/app.js"></script>
     <script src="./Project/ShopLion/JS/index.js"></script>
     <script src="./Project/ShopLion/JS/signUp.js"></script>
