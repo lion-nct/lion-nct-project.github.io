@@ -285,6 +285,17 @@ ul.devided > li:last-child {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
   transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
+.mega-dropdown div:nth-child(1){
+ height:100%;
+}
+.mega-dropdown div a{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+    height: 100%;
+    text-transform: uppercase;
+}
 
 .mega-dropdown:hover .mega-content {
   opacity: 1;
@@ -1983,10 +1994,11 @@ width: 100%;
 .singup-mb{
   display: block;
 }
-.singup-mb:active .sign-up-container{
+.singup-mb:target .sign-up-container{
   opacity: 1;
   z-index: 999;
   transform: translateY(0%);
+  z-index: 5;
 }
 .singup-mb:hover{
   cursor: pointer;
@@ -1994,8 +2006,8 @@ width: 100%;
 }
 .sign-up-container{
   opacity: 1;
-  transform: translateY(-100%);
-  z-index: 0;
+  transform: translateY(0%);
+  z-index: 5;
 }
 }
 
