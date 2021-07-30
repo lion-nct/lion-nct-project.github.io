@@ -168,7 +168,7 @@ var container_right_expose = document.querySelector(".splide__list");
 
 products.forEach((e) => {
   var prod = `
-        <li class="col-3 col-md-6 col-sm-12 splide__slide">
+        <li class="col-3 col-md-6 col-sm-12 splide__slide" data-aos="zoom-in-left" data-aos-duration="1200">
             <div class="product-card">
                 <div class="product-card-img">
                     <img src="${e.image1}" alt="">
