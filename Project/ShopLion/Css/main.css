@@ -1240,7 +1240,8 @@ footer ul li {
 }
 
 .foot-boss {
-  margin-bottom: 180px;
+  position: relative;
+  margin-bottom: 200px;
 }
 .foot-boss ul {
   position: absolute;
@@ -1248,7 +1249,7 @@ footer ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  margin: 0;
+  margin: 120px 0  0;
   padding: 0;
 }
 
