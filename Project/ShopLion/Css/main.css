@@ -54,13 +54,11 @@ h2,
 h1 {
   text-transform: uppercase;
 }
-#fb-root{
-  z-index:9999;
+#fb-root {
+  z-index: 9999;
   background-color: #53b9e0;
 }
-.fb_reset{
-background-color:red;
-}
+
 .container {
   max-width: 1366px;
   margin: auto;
@@ -99,8 +97,8 @@ background-color:red;
   font-size: 40px;
   font-weight: 650;
 }
-.logo:hover{
-  color:white;
+.logo:hover {
+  color: white;
 }
 .container_header-left::before {
   position: absolute;
@@ -285,16 +283,16 @@ ul.devided > li:last-child {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
   transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.mega-dropdown div:nth-child(1){
- height:100%;
+.mega-dropdown div:nth-child(1) {
+  height: 100%;
 }
-.mega-dropdown div a{
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    font-weight: 600;
-    height: 100%;
-    text-transform: uppercase;
+.mega-dropdown div a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 600;
+  height: 100%;
+  text-transform: uppercase;
 }
 
 .mega-dropdown:hover .mega-content {
@@ -555,7 +553,7 @@ ul.devided > li:last-child {
   position: relative;
 }
 
-.box-mb-button{
+.box-mb-button {
   display: none;
 }
 
@@ -1248,7 +1246,7 @@ footer ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  margin: 0;
+  margin-top: 4px;
   padding: 0;
 }
 
@@ -1363,7 +1361,7 @@ footer ul li {
 .foot-boss ul li:hover:nth-child(4) a:after {
   background: #e46880;
 }
-.singup-mb{
+.singup-mb {
   display: none;
 }
 /* responsive */
@@ -1442,9 +1440,6 @@ footer ul li {
   .user-menu li:hover {
     color: var(--hover-color);
   }
-  /* .mega-content ul > li > a{
-width: 100%;
-} */
   .subscribe {
     padding-right: 150px;
   }
@@ -1919,13 +1914,13 @@ width: 100%;
   width: 40px;
   font-size: 18px;
 }
-.modulboss{
+.modulboss {
   z-index: 999;
 }
 .social-container a:hover {
   color: var(--hover-color);
 }
-@media only screen and (min-device-width: 320px) and (max-width: 750px) {
+@media only screen and (min-device-width: 375px) and (max-width: 812px) {
   .support-content:nth-child(1),
   .support-content:nth-child(3) {
     border-right: 0;
@@ -1948,77 +1943,72 @@ width: 100%;
     position: relative;
     margin: 0 auto;
     display: block;
-}
-.mb-product{
-  text-align:center;
-}
-.sp-item-info,.blog-info{
-  padding:0 10px;
-}
-.hero,.section{
-  padding:0;
-}
-.subscribe input {
-  width: auto;
-}
-.sp-item-name{
-  font-size: 30px;
-}
-.sp-item-description{
-  margin-bottom: 30px;
-}
-/* signin/signup */
-.modulboss{
-  z-index: 999;
-}
-.overlay-container{
-  display: none;
-}
-.auth_form-container{
-  position: relative;
-  left: -8px;;
-  width: 300px;
-  height: 460px;
-}
-.form-container{
- width: 100%;
-}
-.auth_form-form{
-  padding: 0 16px;
-}
-.signup-close {
-  position: relative;
-  top: -258px;
-  left: 310px;
-  font-size: 24px;
-}
-.singup-mb{
-  display: block;
-}
-.singup-mb:target .sign-up-container{
-  opacity: 1;
-  z-index: 999;
-  transform: translateY(0%);
-  z-index: 5;
-}
-.singup-mb:hover{
-  cursor: pointer;
-  color: var(--hover-color)
-}
-.sign-up-container{
-  opacity: 1;
-  transform: translateY(0%);
-  z-index: 5;
-}
+  }
+  .mb-product {
+    text-align: center;
+  }
+  .sp-item-info,
+  .blog-info {
+    padding: 0 10px;
+  }
+  .hero,
+  .section {
+    padding: 0;
+  }
+  .subscribe input {
+    width: auto;
+  }
+  .sp-item-name {
+    font-size: 30px;
+  }
+  .sp-item-description {
+    margin-bottom: 30px;
+    padding-right: 0px;
+  }
+  /* signin/signup */
+  .modulboss {
+    z-index: 999;
+  }
+  .overlay-container {
+    display: none;
+  }
+  .auth_form-container {
+    position: relative;
+    left: -8px;
+    width: 300px;
+    height: 460px;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .auth_form-form {
+    padding: 0 16px;
+  }
+  .signup-close {
+    position: relative;
+    top: -258px;
+    left: 310px;
+    font-size: 24px;
+  }
+  .singup-mb {
+    display: block;
+  }
+  .singup-mb:target .sign-up-container {
+    opacity: 1;
+    z-index: 999;
+    transform: translateY(0%);
+    z-index: 5;
+  }
+  .singup-mb:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+  }
+  .sign-up-container {
+    opacity: 1;
+    transform: translateY(0%);
+    z-index: 5;
+  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-}
-.animate__backInDown:hover {
-  display: none;
-}
-.animate__backInDown:hover {
-  --animate-duration: 5s;
-  display: block;
-  color: red;
 }
