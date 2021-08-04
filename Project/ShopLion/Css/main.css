@@ -21,7 +21,9 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
-html{overflow-x:hidden;}
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -236,13 +238,28 @@ ul.devided > li:last-child {
   font-size: 25px;
   font-weight: 700;
 }
-
-.search {
-  width: 600px;
-  height: 40px;
+/* position: relative;
+visibility: hidden;
+opacity: 0;
+transition: opacity linear 0.6s;
+z-index: 9; */
+.search-boss {
   position: relative;
 }
-
+.search {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.6s;
+  z-index: 999;
+}
+/* .search:target {
+  visibility: visible;
+  opacity: 1;
+} */
 .search input {
   height: 100%;
   width: 100%;
@@ -1750,6 +1767,83 @@ footer ul li {
   width: 100%;
 }
 
+/* shop-bag */
+
+.modulboss-bag{
+  position: relative;
+  visibility: visible;
+  transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: 99;
+}
+.modulboss-bag:target{
+  visibility: visible;
+}
+.auth_form-bag{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(179, 179, 179, 0.6);
+}
+.bag-size{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 340px;
+  background-color: white;
+}
+.fa-window-close {
+  font-size: 30px;
+  color: var(--red);
+}
+.bag-size h3{
+  font-size: 20px;
+  padding: 24px 0 16px 0;
+  border-bottom: 1px solid rgb(175, 175, 175,0.2)
+}
+.bag-boss{
+  padding: 0 20px;
+}
+.bag-boss li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.bag-boss li img {
+  width: auto;
+  height: 74px;
+}
+.bag-boss-content p:nth-child(1){
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.bag-boss-content p:nth-child(2){
+  font-size: 14px;
+  font-weight:600;
+}
+.bag-boss i {
+  padding-left: 10px;
+  font-size: 18px;
+}
+.bag-price{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-top: 1px solid rgb(175, 175, 175,0.2);
+  border-bottom: 1px solid rgb(175, 175, 175,0.2)
+}
+.bag-price p{
+  font-size: 18px;
+  font-weight: 600;
+}
+
 /* CSS ITEMSICON  */
 .bx {
   font-size: 22px;
@@ -1917,6 +2011,7 @@ footer ul li {
 .modulboss {
   z-index: 999;
 }
+
 .social-container a:hover {
   color: var(--hover-color);
 }

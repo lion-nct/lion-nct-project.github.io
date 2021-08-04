@@ -96,7 +96,7 @@
                             <i class="fas fa-search"></i>
                         </div>
                         <ul class="user-menu">
-                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li><a href="#modulboss-bag"><i class="fas fa-shopping-bag"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
                             <li><a href="#modul_overlay"><i class="fas fa-user"></i></a></li>
@@ -195,90 +195,146 @@
                             <li><a href="#">contact</a></li>
                         </ul>
                         <ul class="main-menu main-menu-item col-4">
-                            <li><a href="/product.html"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li class="search-boss"><a href="#search"><i class="fas fa-search"></i></a>
+                                <div class="search" id="search">
+                                    <input type="text" placeholder="Search">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </li>
                             <li><a href="/product-detail.html"><i class="fas fa-heart"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
                             <li><a href="#modul_overlay"><i class="fas fa-user"></i></a></li>
-                            <li><a href="#"> <i class="fas fa-search"></i></a></li>
+                            <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- mid header -->
-            <!-- <div class="bg-main">
-                <div class="mid-header container">
-                    <a href="./Project/ShopLion/HTML/index.html" class="logo">LionShop</a>
-                    <div class="search">
-                        <input type="text" placeholder="Search">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    
-                </div>
-            </div> -->
-            <!-- signin/signup form -->
-            <div class="modulboss">
-                <div class="modul_overlay" id="modul_overlay">
-                    <div class="auth_form">
-                        <a href="#" class="modul_overlay-close"></a>
-                        <a href="#"><i class="fas signup-close fa-times"></i></a>
-                        <div class="auth_form-container" id="auth_form-container">
-                            <div class="form-container sign-up-container" id="singup_mb">
-                                <form class="auth_form-form" action="#">
-                                    <h1>Create Account</h1>
-                                    <div class="social-container">
-                                        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <span>or use your email for registration</span>
-                                    <input class="auth_form-input" type="text" placeholder="Name" />
-                                    <input class="auth_form-input" type="email" placeholder="Email" />
-                                    <input class="auth_form-input" type="password" placeholder="Password" />
-                                    <button class="auth_form-button">Sign Up</button>
-                                </form>
-                            </div>
-                            <div class="form-container sign-in-container">
-                                <form class="auth_form-form" action="#">
-                                    <h1>Sign in</h1>
-                                    <div class="social-container">
-                                        <a href="#" class="social">
-                                            <i class="fab fa-facebook"></i>
-                                        </a>
-                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <span>or use your account</span>
-                                    <input class="auth_form-input" type="email" placeholder="Email" />
-                                    <input class="auth_form-input" type="password" placeholder="Password" />
-                                    <a href="#">Forgot your password?</a>
-                                    <a href="#singup_" class="singup-mb">Sign Up</a>
-                                    <button class="auth_form-button">Sign In</button>
-                                </form>
-                            </div>
-                            <div class="overlay-container">
-                                <div class="overlay">
-                                    <div class="overlay-panel overlay-left">
-                                        <h1>Welcome Back!</h1>
-                                        <p>To keep connected with us please login with your personal info</p>
-                                        <button class="ghost auth_form-button" id="signIn">Sign In</button>
-                                    </div>
-                                    <div class="overlay-panel overlay-right">
-                                        <h1>Hello, Friend!</h1>
-                                        <p>Enter your personal details and start journey with us</p>
-                                        <button class="ghost auth_form-button" id="signUp">Sign Up</button>
-                                    </div>
+        </div>
+
+        <!-- signin/signup form -->
+        <div class="modulboss">
+            <div class="modul_overlay" id="modul_overlay">
+                <div class="auth_form">
+                    <a href="#" class="modul_overlay-close"></a>
+                    <a href="#"><i class="fas signup-close fa-times"></i></a>
+                    <div class="auth_form-container" id="auth_form-container">
+                        <div class="form-container sign-up-container" id="singup_mb">
+                            <form class="auth_form-form" action="#">
+                                <h1>Create Account</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <span>or use your email for registration</span>
+                                <input class="auth_form-input" type="text" placeholder="Name" />
+                                <input class="auth_form-input" type="email" placeholder="Email" />
+                                <input class="auth_form-input" type="password" placeholder="Password" />
+                                <button class="auth_form-button">Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="auth_form-form" action="#">
+                                <h1>Sign in</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <span>or use your account</span>
+                                <input class="auth_form-input" type="email" placeholder="Email" />
+                                <input class="auth_form-input" type="password" placeholder="Password" />
+                                <a href="#">Forgot your password?</a>
+                                <a href="#singup_" class="singup-mb">Sign Up</a>
+                                <button class="auth_form-button">Sign In</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <h1>Welcome Back!</h1>
+                                    <p>To keep connected with us please login with your personal info</p>
+                                    <button class="ghost auth_form-button" id="signIn">Sign In</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <h1>Hello, Friend!</h1>
+                                    <p>Enter your personal details and start journey with us</p>
+                                    <button class="ghost auth_form-button" id="signUp">Sign Up</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <!-- end mid header -->
-            <!-- bottom header -->
-            <!-- end bottom header -->
         </div>
+        <div class="modulboss-a">
+            <div class="modulboss-bag" id="modulboss-bag">
+                <a href="#" class="modul_overlay-close"></a>
+                <div class="auth_form-bag">
+                    <div class="bag-size">
+                       <a href="#"><i class="fas fa-window-close"></i></a>
+                        <div class="bag-boss">
+                            <h3>CART ITEMS - 4</h3>
+                            <ul>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                   <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                   <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                   <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                   <i class="fas fa-times-circle"></i>
+                                </li>
+                            </ul>
+                            <div class="bag-price">
+                                <p>SUB TOTAL:</p>
+                                <p>$1600</p>
+                            </div>
+                            <div>
+                                <button class="btn-flat btn-hover">
+                                    <span>buy</span>
+                                </button>
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+
+
+        <!-- end mid header -->
+        <!-- bottom header -->
+        <!-- end bottom header -->
         <!-- end main header -->
     </header>
     <!-- end header -->
@@ -555,7 +611,7 @@
                         <p>Provide free home delivery for the all product over $100</p>
                     </div>
                 </div>
-                <div class="col-3 col-md-6 col-sm-12 support-content" data-aos="flip-left" data-aos-duration="1500">
+                <div class="col-3 col-md-6 col-sm-12 support-content" data-aos="flip-left" data-aos-duration="1300">
                     <div>
                         <i class="fab fa-viacoin"></i>
                     </div>
@@ -564,7 +620,7 @@
                         <p>We ensure the product quality that is our main goal</p>
                     </div>
                 </div>
-                <div class="col-3 col-md-6 col-sm-12 support-content" data-aos="flip-left" data-aos-duration="2500">
+                <div class="col-3 col-md-6 col-sm-12 support-content" data-aos="flip-left" data-aos-duration="1600">
                     <div>
                         <i class="fas fa-undo"></i>
                     </div>
@@ -573,7 +629,7 @@
                         <p>Our Return Policy is very simple and easy for all</p>
                     </div>
                 </div>
-                <div class="col-3 col-md-6 col-sm-12 support-content" data-aos="flip-left" data-aos-duration="3000">
+                <div class="col-3 col-md-6 col-sm-12 support-content" data-aos="flip-left" data-aos-duration="1900">
                     <div>
                         <i class="fas fa-headset"></i>
                     </div>
@@ -750,6 +806,7 @@
                 </a>
             </li>
     </div>
+ 
 
 
     <!-- Messenger Plugin chat Code -->
