@@ -17,4 +17,3 @@ document.querySelectorAll(".dropdown > a").forEach((e) => {
     .addEventListener("click", () =>
       document.querySelector("#header-wrapper").classList.remove("active")
     );
-  

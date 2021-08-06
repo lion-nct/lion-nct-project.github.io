@@ -1830,6 +1830,23 @@ footer ul li {
   width: auto;
   height: 74px;
 }
+.canvas {
+  display: block;
+  vertical-align: bottom;
+}
+.bg-particles{
+  display: block;
+  position: relative;
+}
+.particles-boss{
+  padding: 60px 0;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 626px;
+  background-color: #a76565;
+}
 .bag-boss-content p:nth-child(1) {
   font-size: 14px;
   font-weight: 500;
