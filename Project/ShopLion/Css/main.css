@@ -594,7 +594,7 @@ ul.devided > li:last-child {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 0px 0;
 }
 .sp-item-img img:hover {
   transition: transform 0.3s ease-in-out;
@@ -613,13 +613,14 @@ ul.devided > li:last-child {
 /* <!-- Product list to slide --> */
 .section_container {
   width: 100%;
-  height: 600px;
+  height: 646px;
   display: flex;
   margin-left: 0px;
+  padding: 0px 0 0 0;
 }
 .section_container-left {
   text-align: left;
-  padding: 0 60px 0 150px;
+  padding: 0 60px 0 100px;
   background-color: rgb(192, 192, 192, 0.3);
 }
 .section_container-left h1 {
@@ -638,7 +639,6 @@ ul.devided > li:last-child {
   overflow: hidden;
   padding: 0;
 }
-
 .product-card {
   background-color: var(--main-bg-color);
   overflow: hidden;
@@ -650,6 +650,9 @@ ul.devided > li:last-child {
 }
 
 /* SLIDE */
+.splide__list{
+  height: 450px;
+}
 .splide__slide {
   padding: 0;
 }
@@ -1375,7 +1378,8 @@ footer ul li {
 }
 /* responsive */
 
-@media only screen and (max-width: 1280px) {
+/* Tablets */
+@media (max-width: 1280px) {
   .row {
     width: 100%;
   }
@@ -1836,17 +1840,19 @@ footer ul li {
   display: block;
   vertical-align: bottom;
 }
-.bg-particles{
-  display: block;
+
+.particles-sp-boss{
   position: relative;
 }
 .particles-boss{
-  padding: 60px 0;
+  padding: 100px 0 0px 0;
+}
+.aaaa{
 }
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 626px;
+  height: 650px;
   background-color: var(--grey);
 }
 .bag-boss-content p:nth-child(1) {
@@ -2046,7 +2052,31 @@ footer ul li {
 .social-container a:hover {
   color: var(--hover-color);
 }
-@media only screen and (min-device-width: 375px) and (max-width: 812px) {
+
+@media (min-width: 740px) and (max-width: 1279px){
+  .container-support{
+    margin-top: 2px;
+  }
+  #particles-js{
+    height:520px;
+  }
+  .aa{
+    margin-top: 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .particles-sp-boss{
+    width: 100%;
+    height: 750px;
+  }
+  #particles-js {
+    height: 740px;
+  }
+  .particles-boss {
+    padding: 0px 0 0px 0;
+}
   .support-content:nth-child(1),
   .support-content:nth-child(3) {
     border-right: 0;
@@ -2134,7 +2164,4 @@ footer ul li {
     transform: translateY(0%);
     z-index: 5;
   }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
 }

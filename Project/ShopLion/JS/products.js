@@ -1,24 +1,33 @@
 let products = [
   {
-    name: "Lens G24-70mm",
+    name: "Lens Zoom G16-70mm",
     image1:
-      "./Project/ShopLion/images/bucket_001_SEL14F18GM_1.png",
+      "./Project/ShopLion/images/bucket_SEL100400GM_0000_8ff00e4b015cefaaffa2c79dccc1f65c_1.png",
     image2:
-      "./Project/ShopLion/images/bucket_003_SEL14F18GM.png",
-    old_price: "500",
-    curr_price: "600",
+      "./Project/ShopLion/images/bucket_SEL200600G_0000_aa4c806667bb613cd7fbc9fa6ed7c6a3_1.png",
+    old_price: "350",
+    curr_price: "200",
   },
   {
-    name: "Lens G24-70mm",
+    name: "Lens G100-350mm",
     image1:
-      "./Project/ShopLion/images/bucket_SEL24F28G_0000_001_c22344c1d7a67bb6b6d60ab7c5221dd6.png",
+      "./Project/ShopLion/images/bucket_SEL1635Z_0000_e18ba6034d2e8cf52e09470d304a9708_1.png",
     image2:
-      "./Project/ShopLion/images/bucket_SEL24F28G_0001_002_dad050cd740e093ea20afe0bff5ea120.png",
+      "./Project/ShopLion/images/bucket_SEL1635Z_0001_23b249f0d220cd84317da24a836cee18.png",
+    old_price: "400",
+    curr_price: "300",
+  },
+  {
+    name: "Lens G16-35mm ",
+    image1:
+      "./Project/ShopLion/images/bucket_SEL30M35_0000_29cc3abbce5a3b17571c44195424e731_1.png",
+    image2:
+      "./Project/ShopLion/images/bucket_SEL30M35_0000_29cc3abbce5a3b17571c44195424e731_2.png",
     old_price: "900",
     curr_price: "750",
   },
   {
-    name: "Lens G24-35mm",
+    name: "Lens G24-70mm",
     image1:
       "./Project/ShopLion/images/bucket_SEL35F14GM_0000_001_0873f5a12fc94dde762c2a82fbe58284_2.png",
     image2:
@@ -27,49 +36,38 @@ let products = [
     curr_price: "400",
   },
   {
-    name: "Lens G100-350mm",
+    name: "Lens G24-70mm",
     image1:
       "./Project/ShopLion/images/bucket_SEL24F28G_0000_001_c22344c1d7a67bb6b6d60ab7c5221dd6.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL24F28G_0001_002_dad050cd740e093ea20afe0bff5ea120.png",
     old_price: "800",
     curr_price: "650",
-  },
-  {
-    name: "Lens G24-35mm",
-    image1:
-      "./Project/ShopLion/images/bucket_SEL35F14GM_0000_001_0873f5a12fc94dde762c2a82fbe58284_2.png",
-    image2:
-      "./Project/ShopLion/images/bucket_SEL35F14GM_0002_003_fae7af0d714a09d1d4399169f2ebbaad_1.png",
-    old_price: "750",
-    curr_price: "600",
-  },
-  {
-    name: "Lens G16-35mm ",
-    image1:
-      "./Project/ShopLion/images/bucket_SEL100400GM_0000_8ff00e4b015cefaaffa2c79dccc1f65c_1.png",
-    image2:
-      "./Project/ShopLion/images/bucket_SEL200600G_0000_aa4c806667bb613cd7fbc9fa6ed7c6a3_1.png",
-    old_price: "400",
-    curr_price: "300",
   },
   {
     name: "Lens G24-70mm",
     image1:
-      "./Project/ShopLion/images/bucket_001_SEL14F18GM_1.png",
+      "./Project/ShopLion/images/bucket_SEL20F28_0000_95849e2146760315cdb24e7bfb03d90a_1.png",
     image2:
-      "./Project/ShopLion/images/bucket_003_SEL14F18GM.png",
-    old_price: "900",
-    curr_price: "850",
+      "./Project/ShopLion/images/bucket_SEL20F28_0001_eaac5021161a212a898dd02cb23f5ef3.png",
+    old_price: "750",
+    curr_price: "600",
   },
   {
     name: "Lens G100-350mm",
     image1:
-      "./Project/ShopLion/images/bucket_SEL24F28G_0000_001_c22344c1d7a67bb6b6d60ab7c5221dd6.png",
+      "./Project/ShopLion/images/bucket_SEL1635Z_0000_e18ba6034d2e8cf52e09470d304a9708_1.png",
     image2:
-      "./Project/ShopLion/images/bucket_SEL24F28G_0001_002_dad050cd740e093ea20afe0bff5ea120.png",
-    old_price: "800",
-    curr_price: "650",
+      "./Project/ShopLion/images/bucket_SEL1635Z_0001_23b249f0d220cd84317da24a836cee18.png",
+    old_price: "400",
+    curr_price: "300",
+  },
+  {
+    name: "Lens G24-35mm",
+    image1: "./Project/ShopLion/images/bucket_001_SEL14F18GM_1.png",
+    image2: "./Project/ShopLion/images/bucket_003_SEL14F18GM.png",
+    old_price: "900",
+    curr_price: "850",
   },
 ];
 
