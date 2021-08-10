@@ -2070,7 +2070,7 @@ footer ul li {
 /* Mobile */
 @media (max-width: 739px) {
   .slide > .img > img {
-    max-width: 400px;
+    max-width: 350px;
   }
   .particles-sp-boss{
     width: 100%;
