@@ -7,7 +7,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  /* margin: 0 -15px; */
 }
 
 .row-revere {
@@ -121,7 +121,7 @@
 
 /* small screen */
 
-@media only screen and (max-width: 739px) {
+@media (max-width: 739px) {
   .col-sm-1 {
     width: 8.33%;
   }
