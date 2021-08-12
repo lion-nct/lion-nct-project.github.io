@@ -8,6 +8,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- boxicons -->
     <link rel="stylesheet" href="./Project/fontawesome-free-5.15.3-web/css/all.min.css">
     <!-- app css -->
@@ -15,6 +17,8 @@
     <link rel="stylesheet" href="./Project/ShopLion/Css/main.css">
     <link rel="icon" href="./Project/ShopLion/images/logo.png">
     <link rel="stylesheet" href="./Project/splide-2.4.21/dist/css/splide-core.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,7 +28,7 @@
         <!-- MOBILE MENU -->
         <div class="mobile-menu bg-second">
             <span>
-                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#modulboss-bag"><i class="fas fa-shopping-bag"></i></a>
             </span>
             <a href="./index.html" class="mb-logo">LionShop</a>
             <span class="mb-menu-toggle" id="mb-menu-toggle">
@@ -92,7 +96,10 @@
                             <i class="fas fa-search"></i>
                         </div>
                         <ul class="user-menu">
-                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li>
+                                <a href="#modulboss-bag"><i class="fas fa-shopping-bag"></i>
+                                </a>
+                            </li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
                             <li><a href="#modul_overlay"><i class="fas fa-user"></i></a></li>
@@ -107,10 +114,10 @@
                     </div>
                     <div class="container_header-right col-8">
                         <ul class="main-menu">
-                            <li><a href="./index.html"><i class="fas fa-home"></i> home</a></li>
+                            <li><a href="./index.html"><i class="fas fa-home"></i>home</a></li>
                             <!-- mega menu -->
-                            <li class="mega-dropdown">
-                                <a href="./product.html">Shop<i class="fas fa-angle-down"></i></a>
+                            <li class="mega-dropdown" id="mega-dropdown">
+                                <div><a href="./product.html">Shop<i class="fas fa-angle-down"></i></a></div>
                                 <div class="mega-content">
                                     <div class="row">
                                         <div class="col-3 col-md-12 col-sm-12">
@@ -161,8 +168,6 @@
                                     <div class="row img-row">
                                         <div class="col-3">
                                             <div class="box">
-                                                <!-- <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
-                                                    alt=""> -->
                                                 <img src="./Project/ShopLion/images/bucket_ILCE7CLB_0000_001_6b06bfe60c043489cbc8f4ce0de673ae_1.png"
                                                     alt="">
                                             </div>
@@ -189,93 +194,154 @@
                                 </div>
                             </li>
                             <!-- end mega menu -->
-                            <li><a href="#">blog</a></li>
+                            <li><a href="./product-detail.html">blog</a></li>
                             <li><a href="#">contact</a></li>
                         </ul>
                         <ul class="main-menu main-menu-item col-4">
-                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li class="search-boss">
+                                <a href="#search" class="search-open">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <!-- <div class="search" id="search">
+                                    <input type="text" placeholder="Search">
+                                    <i class="fas fa-search"></i>
+                                </div> -->
+                            </li>
+                            <li><a href="/product-detail.html"><i class="fas fa-heart"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
                             <li><a href="#modul_overlay"><i class="fas fa-user"></i></a></li>
-                            <li><a href="#modul_overlay"> <i class="fas fa-search"></i></a></li>
+                            <li><a href="#modulboss-bag"><i class="fas fa-shopping-bag"></i>
+                                    <span class="cart_count">4</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- mid header -->
-            <!-- <div class="bg-main">
-            <div class="mid-header container">
-                <a href="./Project/ShopLion/HTML/index.html" class="logo">LionShop</a>
-                <div class="search">
-                    <input type="text" placeholder="Search">
-                    <i class="fas fa-search"></i>
-                </div>
-                
-            </div>
-        </div> -->
-            <!-- signin/signup form -->
-            <div class="modulboss">
-                <div class="modul_overlay" id="modul_overlay">
-                    <div class="auth_form">
-                        <a href="#" class="modul_overlay-close"></a>
-                        <a href="#"><i class="fas signup-close fa-times"></i></a>
-                        <div class="auth_form-container" id="auth_form-container">
-                            <div class="form-container sign-up-container">
-                                <form class="auth_form-form" action="#">
-                                    <h1>Create Account</h1>
-                                    <div class="social-container">
-                                        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <span>or use your email for registration</span>
-                                    <input class="auth_form-input" type="text" placeholder="Name" />
-                                    <input class="auth_form-input" type="email" placeholder="Email" />
-                                    <input class="auth_form-input" type="password" placeholder="Password" />
-                                    <button class="auth_form-button">Sign Up</button>
-                                </form>
+        </div>
+
+        <!-- signin/signup form -->
+        <div class="modulboss"></div>
+        <div class="modul_overlay" id="modul_overlay">
+            <div class="auth_form">
+                <a href="#" class="modul_overlay-close"></a>
+                <a href="#"><i class="fas signup-close fa-times"></i></a>
+                <div class="auth_form-container" id="auth_form-container">
+                    <div class="form-container sign-up-container" id="singup_mb">
+                        <form class="auth_form-form" action="#">
+                            <h1>Create Account</h1>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                <a href="#" class="social"><i class="fab fa-instagram"></i></a>
                             </div>
-                            <div class="form-container sign-in-container">
-                                <form class="auth_form-form" action="#">
-                                    <h1>Sign in</h1>
-                                    <div class="social-container">
-                                        <a href="#" class="social">
-                                            <i class="fab fa-facebook"></i>
-                                        </a>
-                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <span>or use your account</span>
-                                    <input class="auth_form-input" type="email" placeholder="Email" />
-                                    <input class="auth_form-input" type="password" placeholder="Password" />
-                                    <a href="#">Forgot your password?</a>
-                                    <button class="auth_form-button">Sign In</button>
-                                </form>
+                            <span>or use your email for registration</span>
+                            <input class="auth_form-input" type="text" placeholder="Name" />
+                            <input class="auth_form-input" type="email" placeholder="Email" />
+                            <input class="auth_form-input" type="password" placeholder="Password" />
+                            <button class="auth_form-button">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form class="auth_form-form" action="#">
+                            <h1>Sign in</h1>
+                            <div class="social-container">
+                                <a href="#" class="social">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                <a href="#" class="social"><i class="fab fa-instagram"></i></a>
                             </div>
-                            <div class="overlay-container">
-                                <div class="overlay">
-                                    <div class="overlay-panel overlay-left">
-                                        <h1>Welcome Back!</h1>
-                                        <p>To keep connected with us please login with your personal info</p>
-                                        <button class="ghost auth_form-button" id="signIn">Sign In</button>
-                                    </div>
-                                    <div class="overlay-panel overlay-right">
-                                        <h1>Hello, Friend!</h1>
-                                        <p>Enter your personal details and start journey with us</p>
-                                        <button class="ghost auth_form-button" id="signUp">Sign Up</button>
-                                    </div>
-                                </div>
+                            <span>or use your account</span>
+                            <input class="auth_form-input" type="email" placeholder="Email" />
+                            <input class="auth_form-input" type="password" placeholder="Password" />
+                            <a href="#">Forgot your password?</a>
+                            <a href="#singup_" class="singup-mb">Sign Up</a>
+                            <button class="auth_form-button">Sign In</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1>Welcome Back!</h1>
+                                <p>To keep connected with us please login with your personal info</p>
+                                <button class="ghost auth_form-button" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1>Hello, Friend!</h1>
+                                <p>Enter your personal details and start journey with us</p>
+                                <button class="ghost auth_form-button" id="signUp">Sign Up</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <!-- end mid header -->
-            <!-- bottom header -->
-            <!-- end bottom header -->
         </div>
+        </div>
+        <div class="modulboss-a">
+            <div class="modulboss-bag" id="modulboss-bag">
+                <div class="auth_form-bag">
+                    <a href="#" class="modul_overlay-close"></a>
+                    <div class="bag-size">
+                        <a href="#"><i class="fas fa-window-close"></i></a>
+                        <div class="bag-boss">
+                            <h3>CART ITEMS - 4</h3>
+                            <ul>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                            </ul>
+                            <div class="bag-price">
+                                <p>SUB TOTAL:</p>
+                                <p>$1600</p>
+                            </div>
+                            <div>
+                                <button class="btn-flat btn-hover">
+                                    <span>buy</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- end mid header -->
+        <!-- bottom header -->
+        <!-- end bottom header -->
         <!-- end main header -->
     </header>
     <!-- end header -->
@@ -289,17 +355,16 @@
                 <div class="breadcumb">
                     <a href="./index.html">home</a>
                     <span><i class="fas fa-angle-double-right"></i></span>
-                    <a href="./products.html">all products</a>
+                    <a href="./product.html">all products</a>
                     <span><i class="fas fa-angle-double-right"></i></span>
                     <a href="./product-detail.html">SONY α7R IV(ILCE-7RM4A)</a>
                 </div>
             </div>
             <div class="row product-row">
-                <div class="col-5 col-md-12">
+                <div class="col-5 col-md-12 col-sm-12">
                     <div class="product-img" id="product-img">
                         <img src="./Project/ShopLion/images/bucket_006_SEL14F18GM.png" alt="">
                     </div>
-
                     <div class="box">
                         <div class="product-img-list">
                             <div class="product-img-item">
@@ -321,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7 col-md-12">
+                <div class="col-7 col-md-12 ">
                     <div class="product-info">
                         <h1>
                             SONY α7R IV Full-frame
@@ -347,13 +412,13 @@
                             photographers expect. The α7R IV captures the mood of each scene and the texture of
                             subjects.
                         </p>
-                        <div class="product-info-price">$2345</div>
+                        <div class="product-info-price">$3800</div>
                         <div class="product-quantity-wrapper">
-                            <span class="product-quantity-btn">
+                            <span class="product-quantity-btn minus is-form">
                                 <i class="fas fa-minus"></i>
                             </span>
-                            <span class="product-quantity">1</span>
-                            <span class="product-quantity-btn">
+                            <input class="product-quantity input-qty" max="20" min="1" name="" type="number" value="1">
+                            <span class="product-quantity-btn plus is-form">
                                 <i class="fas fa-plus"></i>
                             </span>
                         </div>
@@ -363,176 +428,176 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="box-header">
-                    description
-                </div>
-                <div class="product-detail-description">
-                    <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
-                        view all
-                    </button>
-                    <div class="product-detail-description-content">
-                        <p>
-                            Equipped with a back-illuminated CMOS sensor with approximately 61 million effective pixels,
-                            it achieves overwhelming descriptive power without a full-size mirror. We have reviewed
-                            every detail to support high-resolution shooting, such as a new shutter unit, shock
-                            absorbing damper, and advanced camera shake correction, which does not allow minute
-                            vibrations.
-                        </p>
-                        <img src="./Project/ShopLion/images/bucket_006_SEL14F18GM.png" alt="">
-                        <p>
-                            Equipped with a back-illuminated CMOS sensor with approximately 61 million effective pixels,
-                            it achieves overwhelming descriptive power without a full-size mirror. We have reviewed
-                            every detail to support high-resolution shooting, such as a new shutter unit, shock
-                            absorbing damper, and advanced camera shake correction, which does not allow minute
-                            vibrations.Enter a whole new world of photographic expression with incomparable image
-                            quality and processing speed. A powerful new choice joins the α7R series with ever more
-                            advanced connectivity and enhanced reliability demanded by pros.
-                        </p>
-                        <img src="./Project/ShopLion/images/bucket_001_SEL14F18GM_1.png" alt="">
-                        <p>
-                            Virtuoso expression. Sony’s full-frame mirrorless α7R IV reveals ever more overwhelming
-                            photographic vision, with expressive prowess once expected only in medium-format cameras,
-                            and remarkably high speed in a compact body. See how its enhanced rigidity and connectivity
-                            raise your productivity.
-                        </p>
-                    </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                description
+            </div>
+            <div class="product-detail-description">
+                <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
+                    view all
+                </button>
+                <div class="product-detail-description-content">
+                    <p>
+                        Equipped with a back-illuminated CMOS sensor with approximately 61 million effective pixels,
+                        it achieves overwhelming descriptive power without a full-size mirror. We have reviewed
+                        every detail to support high-resolution shooting, such as a new shutter unit, shock
+                        absorbing damper, and advanced camera shake correction, which does not allow minute
+                        vibrations.
+                    </p>
+                    <img src="./Project/ShopLion/images/bucket_006_SEL14F18GM.png" alt="">
+                    <p>
+                        Equipped with a back-illuminated CMOS sensor with approximately 61 million effective pixels,
+                        it achieves overwhelming descriptive power without a full-size mirror. We have reviewed
+                        every detail to support high-resolution shooting, such as a new shutter unit, shock
+                        absorbing damper, and advanced camera shake correction, which does not allow minute
+                        vibrations.Enter a whole new world of photographic expression with incomparable image
+                        quality and processing speed. A powerful new choice joins the α7R series with ever more
+                        advanced connectivity and enhanced reliability demanded by pros.
+                    </p>
+                    <img src="./Project/ShopLion/images/bucket_001_SEL14F18GM_1.png" alt="">
+                    <p>
+                        Virtuoso expression. Sony’s full-frame mirrorless α7R IV reveals ever more overwhelming
+                        photographic vision, with expressive prowess once expected only in medium-format cameras,
+                        and remarkably high speed in a compact body. See how its enhanced rigidity and connectivity
+                        raise your productivity.
+                    </p>
                 </div>
             </div>
-            <div class="box">
-                <div class="box-header">
-                    review
+        </div>
+        <div class="box">
+            <div class="box-header">
+                review
+            </div>
+            <div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./Project/ShopLion/images/thanh.jpg" alt="">
+                        </div>
+                        <div class="user-name">
+                            <span class="name">Nguyen Cong Thanh</span>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user-rate-content">
+                        Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
+                        resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
+                        pro
+                    </div>
                 </div>
-                <div>
-                    <div class="user-rate">
-                        <div class="user-info">
-                            <div class="user-avt">
-                                <img src="./Project/ShopLion/images/thanh.jpg" alt="">
-                            </div>
-                            <div class="user-name">
-                                <span class="name">Nguyen Cong Thanh</span>
-                                <span class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                            </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./Project/ShopLion/images/thanh.jpg" alt="">
                         </div>
-                        <div class="user-rate-content">
-                            Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
-                            resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
-                            pro
+                        <div class="user-name">
+                            <span class="name">Nguyen Cong Thanh</span>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="user-rate">
-                        <div class="user-info">
-                            <div class="user-avt">
-                                <img src="./Project/ShopLion/images/thanh.jpg" alt="">
-                            </div>
-                            <div class="user-name">
-                                <span class="name">Nguyen Cong Thanh</span>
-                                <span class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                            </div>
+                    <div class="user-rate-content">
+                        Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
+                        resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
+                        pro
+                    </div>
+                </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./Project/ShopLion/images/thanh.jpg" alt="">
                         </div>
-                        <div class="user-rate-content">
-                            Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
-                            resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
-                            pro
+                        <div class="user-name">
+                            <span class="name">Nguyen Cong Thanh</span>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="user-rate">
-                        <div class="user-info">
-                            <div class="user-avt">
-                                <img src="./Project/ShopLion/images/thanh.jpg" alt="">
-                            </div>
-                            <div class="user-name">
-                                <span class="name">Nguyen Cong Thanh</span>
-                                <span class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                            </div>
+                    <div class="user-rate-content">
+                        Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
+                        resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
+                        pro
+                    </div>
+                </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./Project/ShopLion/images/thanh.jpg" alt="">
                         </div>
-                        <div class="user-rate-content">
-                            Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
-                            resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
-                            pro
+                        <div class="user-name">
+                            <span class="name">Nguyen Cong Thanh</span>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="user-rate">
-                        <div class="user-info">
-                            <div class="user-avt">
-                                <img src="./Project/ShopLion/images/thanh.jpg" alt="">
-                            </div>
-                            <div class="user-name">
-                                <span class="name">Nguyen Cong Thanh</span>
-                                <span class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
+                    <div class="user-rate-content">
+                        Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
+                        resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
+                        pro
+                    </div>
+                </div>
+                <div class="user-rate">
+                    <div class="user-info">
+                        <div class="user-avt">
+                            <img src="./Project/ShopLion/images/thanh.jpg" alt="">
                         </div>
-                        <div class="user-rate-content">
-                            Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
-                            resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
-                            pro
+                        <div class="user-name">
+                            <span class="name">Nguyen Cong Thanh</span>
+                            <span class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="user-rate">
-                        <div class="user-info">
-                            <div class="user-avt">
-                                <img src="./Project/ShopLion/images/thanh.jpg" alt="">
-                            </div>
-                            <div class="user-name">
-                                <span class="name">Nguyen Cong Thanh</span>
-                                <span class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="user-rate-content">
-                            Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
-                            resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
-                            pro
-                        </div>
+                    <div class="user-rate-content">
+                        Full-frame Exmor R™ CMOS sensor combined with BIONZ X™ imaging engine delivers unprecedented
+                        resolution, fine gradation, and low noise to open entirely new dimensions of detail just as
+                        pro
                     </div>
-                    <div class="box">
-                        <ul class="pagination">
-                            <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
-                            <li><a href="#" class="active">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="box">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="box">
-                <div class="box-header">
-                    related products
-                </div>
-                <div class="row" id="related-products"></div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                related products
             </div>
+            <div class="row" id="related-products"></div>
         </div>
     </div>
     <!-- end product-detail content -->
@@ -541,19 +606,19 @@
     <footer class="bg-second">
         <div class="container">
             <div class="row footer-mobile">
-                <div class="col-3 col-md-6 col-sm-12 footer-mobile-contact ">
+                <div class="col-3 col-md-6 col-sm-12 footer-mobile-contact" data-aos="fade-up" data-aos-duration="1000">
                     <div class="contact">
                         <h3 class="contact-header">
                             LionShop
                         </h3>
                         <ul class="contact-socials">
-                            <li><a href="#">
+                            <li><a href="https://www.facebook.com/thanhlion.1998">
                                     <i class="fab fa-facebook"></i>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="https://www.instagram.com/lion_nct/">
                                     <i class="fab fa-instagram"></i>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="https://www.youtube.com/channel/UCZNLpQnXuixFjwoltOjiIBw">
                                     <i class="fab fa-youtube"></i>
                                 </a></li>
                             <li><a href="#">
@@ -577,7 +642,7 @@
                         <button>Sign Up</button>
                     </div>
                 </div>
-                <div class="col-3 col-md-6 footer-content">
+                <div class="col-3 col-md-6 footer-content" data-aos="fade-up" data-aos-duration="1500">
                     <h3 class="footer-head">Products</h3>
                     <ul class="menu">
                         <li><a href="#">B2B Premium Incentive</a></li>
@@ -587,7 +652,7 @@
                         <li><a href="#">Professional Products & Solutions</a></li>
                     </ul>
                 </div>
-                <div class="col-3 col-md-6 footer-content">
+                <div class="col-3 col-md-6 footer-content" data-aos="fade-up" data-aos-duration="2000">
                     <h3 class="footer-head">News & Info</h3>
                     <ul class="menu">
                         <li><a href="#">Product Support</a></li>
@@ -596,7 +661,7 @@
                         <li><a href="#">Accessibility</a></li>
                         <li><a href="#">Electronics Newsletter</a>
                 </div>
-                <div class="col-3 col-md-6 footer-content">
+                <div class="col-3 col-md-6 footer-content" data-aos="fade-up" data-aos-duration="3000">
                     <h3 class="footer-head">support</h3>
                     <ul class="menu">
                         <li><a href="#">Help center</a></li>
@@ -640,10 +705,13 @@
     <!-- end footer -->
     <!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
-
     <!-- Your Plugin chat code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- app js -->
     <script src="./Project/ShopLion/JS/app.js"></script>
     <script src="./Project/ShopLion/JS/product-detail.js"></script>

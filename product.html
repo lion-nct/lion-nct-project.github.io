@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
+        <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- boxicons -->
     <link rel="stylesheet" href="./Project/fontawesome-free-5.15.3-web/css/all.min.css">
     <!-- app css -->
@@ -18,6 +20,8 @@
     <link rel="stylesheet" href="./Project/ShopLion/Css/main.css">
     <link rel="icon" href="./Project/ShopLion/images/logo.png">
     <link rel="stylesheet" href="./Project/splide-2.4.21/dist/css/splide-core.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -27,7 +31,7 @@
         <!-- MOBILE MENU -->
         <div class="mobile-menu bg-second">
             <span>
-                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#modulboss-bag"><i class="fas fa-shopping-bag"></i></a>
             </span>
             <a href="./index.html" class="mb-logo">LionShop</a>
             <span class="mb-menu-toggle" id="mb-menu-toggle">
@@ -95,7 +99,10 @@
                             <i class="fas fa-search"></i>
                         </div>
                         <ul class="user-menu">
-                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                            <li>
+                                <a href="#modulboss-bag"><i class="fas fa-shopping-bag"></i>
+                                </a>
+                            </li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
                             <li><a href="#modul_overlay"><i class="fas fa-user"></i></a></li>
@@ -110,10 +117,10 @@
                     </div>
                     <div class="container_header-right col-8">
                         <ul class="main-menu">
-                            <li><a href="./index.html"><i class="fas fa-home"></i> home</a></li>
+                            <li><a href="./index.html"><i class="fas fa-home"></i>home</a></li>
                             <!-- mega menu -->
-                            <li class="mega-dropdown">
-                                <a href="./Project/ShopLion/HTML/product.html">Shop<i class="fas fa-angle-down"></i></a>
+                            <li class="mega-dropdown" id="mega-dropdown">
+                                <div><a href="./product.html">Shop<i class="fas fa-angle-down"></i></a></div>
                                 <div class="mega-content">
                                     <div class="row">
                                         <div class="col-3 col-md-12 col-sm-12">
@@ -164,8 +171,6 @@
                                     <div class="row img-row">
                                         <div class="col-3">
                                             <div class="box">
-                                                <!-- <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
-                                                    alt=""> -->
                                                 <img src="./Project/ShopLion/images/bucket_ILCE7CLB_0000_001_6b06bfe60c043489cbc8f4ce0de673ae_1.png"
                                                     alt="">
                                             </div>
@@ -196,89 +201,150 @@
                             <li><a href="#">contact</a></li>
                         </ul>
                         <ul class="main-menu main-menu-item col-4">
-                            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li class="search-boss">
+                                <a href="#search" class="search-open">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <!-- <div class="search" id="search">
+                                    <input type="text" placeholder="Search">
+                                    <i class="fas fa-search"></i>
+                                </div> -->
+                            </li>
+                            <li><a href="/product-detail.html"><i class="fas fa-heart"></i></a></li>
                             <li><a href="#"><i class="fas fa-bell"></i></a></li>
                             <li><a href="#modul_overlay"><i class="fas fa-user"></i></a></li>
-                            <li><a href="#modul_overlay"> <i class="fas fa-search"></i></a></li>
+                            <li><a href="#modulboss-bag"><i class="fas fa-shopping-bag"></i>
+                                    <span class="cart_count">4</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- mid header -->
-            <!-- <div class="bg-main">
-            <div class="mid-header container">
-                <a href="./Project/ShopLion/HTML/index.html" class="logo">LionShop</a>
-                <div class="search">
-                    <input type="text" placeholder="Search">
-                    <i class="fas fa-search"></i>
-                </div>
-                
-            </div>
-        </div> -->
-            <!-- signin/signup form -->
-            <div class="modulboss">
-                <div class="modul_overlay" id="modul_overlay">
-                    <div class="auth_form">
-                        <a href="#" class="modul_overlay-close"></a>
-                        <a href="#"><i class="fas signup-close fa-times"></i></a>
-                        <div class="auth_form-container" id="auth_form-container">
-                            <div class="form-container sign-up-container">
-                                <form class="auth_form-form" action="#">
-                                    <h1>Create Account</h1>
-                                    <div class="social-container">
-                                        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <span>or use your email for registration</span>
-                                    <input class="auth_form-input" type="text" placeholder="Name" />
-                                    <input class="auth_form-input" type="email" placeholder="Email" />
-                                    <input class="auth_form-input" type="password" placeholder="Password" />
-                                    <button class="auth_form-button">Sign Up</button>
-                                </form>
-                            </div>
-                            <div class="form-container sign-in-container">
-                                <form class="auth_form-form" action="#">
-                                    <h1>Sign in</h1>
-                                    <div class="social-container">
-                                        <a href="#" class="social">
-                                            <i class="fab fa-facebook"></i>
-                                        </a>
-                                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                    <span>or use your account</span>
-                                    <input class="auth_form-input" type="email" placeholder="Email" />
-                                    <input class="auth_form-input" type="password" placeholder="Password" />
-                                    <a href="#">Forgot your password?</a>
-                                    <button class="auth_form-button">Sign In</button>
-                                </form>
-                            </div>
-                            <div class="overlay-container">
-                                <div class="overlay">
-                                    <div class="overlay-panel overlay-left">
-                                        <h1>Welcome Back!</h1>
-                                        <p>To keep connected with us please login with your personal info</p>
-                                        <button class="ghost auth_form-button" id="signIn">Sign In</button>
-                                    </div>
-                                    <div class="overlay-panel overlay-right">
-                                        <h1>Hello, Friend!</h1>
-                                        <p>Enter your personal details and start journey with us</p>
-                                        <button class="ghost auth_form-button" id="signUp">Sign Up</button>
-                                    </div>
+        </div>
+
+        <!-- signin/signup form -->
+        <div class="modulboss"></div>
+            <div class="modul_overlay" id="modul_overlay">
+                <div class="auth_form">
+                    <a href="#" class="modul_overlay-close"></a>
+                    <a href="#"><i class="fas signup-close fa-times"></i></a>
+                    <div class="auth_form-container" id="auth_form-container">
+                        <div class="form-container sign-up-container" id="singup_mb">
+                            <form class="auth_form-form" action="#">
+                                <h1>Create Account</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <span>or use your email for registration</span>
+                                <input class="auth_form-input" type="text" placeholder="Name" />
+                                <input class="auth_form-input" type="email" placeholder="Email" />
+                                <input class="auth_form-input" type="password" placeholder="Password" />
+                                <button class="auth_form-button">Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="auth_form-form" action="#">
+                                <h1>Sign in</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="social"><i class="fab fa-google"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <span>or use your account</span>
+                                <input class="auth_form-input" type="email" placeholder="Email" />
+                                <input class="auth_form-input" type="password" placeholder="Password" />
+                                <a href="#">Forgot your password?</a>
+                                <a href="#singup_" class="singup-mb">Sign Up</a>
+                                <button class="auth_form-button">Sign In</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <h1>Welcome Back!</h1>
+                                    <p>To keep connected with us please login with your personal info</p>
+                                    <button class="ghost auth_form-button" id="signIn">Sign In</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <h1>Hello, Friend!</h1>
+                                    <p>Enter your personal details and start journey with us</p>
+                                    <button class="ghost auth_form-button" id="signUp">Sign Up</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <!-- end mid header -->
-            <!-- bottom header -->
-            <!-- end bottom header -->
         </div>
+        <div class="modulboss-a">
+            <div class="modulboss-bag" id="modulboss-bag">
+                <div class="auth_form-bag">
+                    <a href="#" class="modul_overlay-close"></a>
+                    <div class="bag-size">
+                        <a href="#"><i class="fas fa-window-close"></i></a>
+                        <div class="bag-boss">
+                            <h3>CART ITEMS - 4</h3>
+                            <ul>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                                <li>
+                                    <img src="./Project/ShopLion/images/sony.png">
+                                    <div class="bag-boss-content">
+                                        <p>SONY α7R IV(ILCE-7RM4A)</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <i class="fas fa-times-circle"></i>
+                                </li>
+                            </ul>
+                            <div class="bag-price">
+                                <p>SUB TOTAL:</p>
+                                <p>$1600</p>
+                            </div>
+                            <div>
+                                <button class="btn-flat btn-hover">
+                                    <span>buy</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- end mid header -->
+        <!-- bottom header -->
+        <!-- end bottom header -->
         <!-- end main header -->
     </header>
     <!-- end header -->
@@ -291,7 +357,7 @@
                 <div class="breadcumb">
                     <a href="./index.html">home</a>
                     <span><i class="fas fa-angle-double-right"></i></span>
-                    <a href="./products.html">all products</a>
+                    <a href="./product.html">all products</a>
                 </div>
             </div>
             <div class="box">
@@ -359,8 +425,8 @@
                             <ul class="filter-list">
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1" checked="checked">
-                                        <label for="remember1">
+                                        <input type="checkbox" id="brands1" checked="checked">
+                                        <label for="brands1">
                                             16-70mm
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -368,8 +434,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember2">
-                                        <label for="remember2">
+                                        <input type="checkbox" id="brands2">
+                                        <label for="brands2">
                                             24-70mm
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -377,8 +443,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember3">
-                                        <label for="remember3">
+                                        <input type="checkbox" id="brands3">
+                                        <label for="brands3">
                                             35-55mm
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -386,8 +452,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember4">
-                                        <label for="remember4">
+                                        <input type="checkbox" id="brands4">
+                                        <label for="brands4">
                                             16-35mm
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -395,8 +461,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember5">
-                                        <label for="remember5">
+                                        <input type="checkbox" id="brands5">
+                                        <label for="brands5">
                                             100-350mm
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -411,8 +477,8 @@
                             <ul class="filter-list">
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
+                                        <input type="checkbox" id="color1">
+                                        <label for="color1">
                                             Red
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -420,8 +486,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember2">
-                                        <label for="remember2">
+                                        <input type="checkbox" id="color2">
+                                        <label for="color2">
                                             Blue
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -429,8 +495,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember3">
-                                        <label for="remember3">
+                                        <input type="checkbox" id="color3">
+                                        <label for="color3">
                                             White
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -438,8 +504,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember4">
-                                        <label for="remember4">
+                                        <input type="checkbox" id="color4">
+                                        <label for="color4">
                                             Pink
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -447,8 +513,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember5">
-                                        <label for="remember5">
+                                        <input type="checkbox" id="color5">
+                                        <label for="color5">
                                             Yellow
                                             <i class="fas fa-check"></i>
                                         </label>
@@ -463,8 +529,8 @@
                             <ul class="filter-list">
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
+                                        <input type="checkbox" id="rating1">
+                                        <label for="rating1">
                                             <span class="rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -478,8 +544,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
+                                        <input type="checkbox" id="rating2">
+                                        <label for="rating2">
                                             <span class="rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -493,8 +559,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
+                                        <input type="checkbox" id="rating3">
+                                        <label for="rating3">
                                             <span class="rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -508,8 +574,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
+                                        <input type="checkbox" id="rating4">
+                                        <label for="rating4">
                                             <span class="rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -523,8 +589,8 @@
                                 </li>
                                 <li>
                                     <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
+                                        <input type="checkbox" id="rating5">
+                                        <label for="rating5">
                                             <span class="rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="far fa-star"></i>
@@ -539,7 +605,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-9 col-md-12">
+                    <div class="col-9 col-md-12 col-sm-12">
                         <div class="box filter-toggle-box">
                             <button class="btn-flat btn-hover" id="filter-toggle">filter</button>
                         </div>
@@ -570,19 +636,19 @@
     <footer class="bg-second">
         <div class="container">
             <div class="row footer-mobile">
-                <div class="col-3 col-md-6 col-sm-12 footer-mobile-contact ">
+                <div class="col-3 col-md-6 col-sm-12 footer-mobile-contact" data-aos="fade-up" data-aos-duration="1000">
                     <div class="contact">
                         <h3 class="contact-header">
                             LionShop
                         </h3>
                         <ul class="contact-socials">
-                            <li><a href="#">
+                            <li><a href="https://www.facebook.com/thanhlion.1998">
                                     <i class="fab fa-facebook"></i>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="https://www.instagram.com/lion_nct/">
                                     <i class="fab fa-instagram"></i>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="https://www.youtube.com/channel/UCZNLpQnXuixFjwoltOjiIBw">
                                     <i class="fab fa-youtube"></i>
                                 </a></li>
                             <li><a href="#">
@@ -606,7 +672,7 @@
                         <button>Sign Up</button>
                     </div>
                 </div>
-                <div class="col-3 col-md-6 footer-content">
+                <div class="col-3 col-md-6 footer-content" data-aos="fade-up" data-aos-duration="1500">
                     <h3 class="footer-head">Products</h3>
                     <ul class="menu">
                         <li><a href="#">B2B Premium Incentive</a></li>
@@ -616,7 +682,7 @@
                         <li><a href="#">Professional Products & Solutions</a></li>
                     </ul>
                 </div>
-                <div class="col-3 col-md-6 footer-content">
+                <div class="col-3 col-md-6 footer-content" data-aos="fade-up" data-aos-duration="2000">
                     <h3 class="footer-head">News & Info</h3>
                     <ul class="menu">
                         <li><a href="#">Product Support</a></li>
@@ -625,7 +691,7 @@
                         <li><a href="#">Accessibility</a></li>
                         <li><a href="#">Electronics Newsletter</a>
                 </div>
-                <div class="col-3 col-md-6 footer-content">
+                <div class="col-3 col-md-6 footer-content" data-aos="fade-up" data-aos-duration="3000">
                     <h3 class="footer-head">support</h3>
                     <ul class="menu">
                         <li><a href="#">Help center</a></li>
@@ -673,6 +739,10 @@
     <!-- Your Plugin chat code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- app js -->
     <script src="./Project/ShopLion/JS/app.js"></script>
     <script src="./Project/ShopLion/JS/products.js"></script>

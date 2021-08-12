@@ -9,7 +9,7 @@ let products = [
     curr_price: "200",
   },
   {
-    name: "Lens G100-350mm",
+    name: "Lens Zoom G100-350mm",
     image1:
       "./Project/ShopLion/images/bucket_SEL1635Z_0000_e18ba6034d2e8cf52e09470d304a9708_1.png",
     image2:
@@ -18,7 +18,7 @@ let products = [
     curr_price: "300",
   },
   {
-    name: "Lens G16-35mm ",
+    name: "Lens Zoom G16-35mm ",
     image1:
       "./Project/ShopLion/images/bucket_SEL30M35_0000_29cc3abbce5a3b17571c44195424e731_1.png",
     image2:
@@ -27,7 +27,7 @@ let products = [
     curr_price: "750",
   },
   {
-    name: "Lens G24-70mm",
+    name: "Lens Zoom G24-70mm",
     image1:
       "./Project/ShopLion/images/bucket_SEL35F14GM_0000_001_0873f5a12fc94dde762c2a82fbe58284_2.png",
     image2:
@@ -36,7 +36,7 @@ let products = [
     curr_price: "400",
   },
   {
-    name: "Lens G24-70mm",
+    name: "Lens Zoom G24-70mm",
     image1:
       "./Project/ShopLion/images/bucket_SEL24F28G_0000_001_c22344c1d7a67bb6b6d60ab7c5221dd6.png",
     image2:
@@ -45,7 +45,7 @@ let products = [
     curr_price: "650",
   },
   {
-    name: "Lens G24-70mm",
+    name: "Lens Zoom G24-70mm",
     image1:
       "./Project/ShopLion/images/bucket_SEL20F28_0000_95849e2146760315cdb24e7bfb03d90a_1.png",
     image2:
@@ -54,7 +54,7 @@ let products = [
     curr_price: "600",
   },
   {
-    name: "Lens G100-350mm",
+    name: "Lens Zoom G100-350mm",
     image1:
       "./Project/ShopLion/images/bucket_SEL1635Z_0000_e18ba6034d2e8cf52e09470d304a9708_1.png",
     image2:
@@ -63,7 +63,7 @@ let products = [
     curr_price: "300",
   },
   {
-    name: "Lens G24-35mm",
+    name: "Lens Zoom G24-35mm",
     image1: "./Project/ShopLion/images/bucket_001_SEL14F18GM_1.png",
     image2: "./Project/ShopLion/images/bucket_003_SEL14F18GM.png",
     old_price: "900",

@@ -818,8 +818,8 @@ ul.devided > li:last-child {
 
 .btn-shop-now,
 .btn-cart-add {
-  font-size: 15px;
-  padding: 5px 10px;
+  font-size: 14px;
+  padding: 6px 8px;
   line-height: 17px;
 }
 
@@ -944,7 +944,7 @@ footer ul li {
 }
 
 .subscribe input {
-  width: 80%;
+  width: 70%;
   height: 40px;
   outline: 0;
   border: 0;
@@ -956,7 +956,6 @@ footer ul li {
   width: 30%;
   position: absolute;
   top: 50%;
-  right: 10px;
   transform: translateY(-50%);
   outline: 0;
   border: 0;
@@ -1149,13 +1148,20 @@ footer ul li {
 .product-quantity-wrapper {
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 
 .product-quantity {
   margin: 0 10px;
-  font-size: 25px;
+  font-size: 24px;
+  text-align: center;
+  -webkit-appearance:none;
 }
-
+.product-quantity[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .product-quantity-btn {
   height: 30px;
   width: 30px;
@@ -1197,10 +1203,8 @@ footer ul li {
 .product-detail-description-content.active {
   height: max-content;
 }
-
-.product-detail-description-content img {
-  width: 1000px;
-  height: auto;
+.product-detail-description-content p{
+  text-align: left;
 }
 
 .btn-view-description {
@@ -1454,7 +1458,7 @@ footer ul li {
     color: var(--hover-color);
   }
   .subscribe {
-    padding-right: 150px;
+    padding-right: 100px;
   }
   .fa-bars:hover {
     color: var(--hover-color);
@@ -2060,12 +2064,26 @@ footer ul li {
   .support-content-boss{
     margin-top: 80px;
   }
+  .subscribe button{
+    width: 20%;
+  }
+  .product-info{
+    padding: 0 60px;
+  }
+  .product-detail-description-content p{
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 1023px){
 .foot-boss{
   display: none;
 }
+.btn-view-description {
+  position: absolute;
+  bottom: -80px;
+}
+
 }
 /* Mobile */
 @media (max-width: 739px) {
@@ -2113,15 +2131,15 @@ footer ul li {
   .section {
     padding: 0;
   }
-  .subscribe input {
-    width: auto;
-  }
   .sp-item-name {
     font-size: 30px;
   }
-  .sp-item-description {
-    margin-bottom: 30px;
-    padding-right: 0px;
+  .product-info{
+    padding: 0 30px;
+  }
+  .btn-view-description{
+    position: absolute;
+    bottom: -80px;
   }
   /* signin/signup */
   .modulboss {
