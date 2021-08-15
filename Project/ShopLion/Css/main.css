@@ -38,7 +38,11 @@ body.light{
   color: white;
 	background-color: var(--body-color);
 }
-
+.cc{
+  position: relative;
+  top: 50px;
+  right: 500px;
+}
 button,
 i {
   cursor: pointer;
@@ -1629,8 +1633,8 @@ body.light .progress-wrap svg.progress-circle path {
   border-radius: 27px;
   background-image: linear-gradient(298deg, var(--red), var(--hover-color));
   position: fixed;
-  right: 30px;
-  top: 120px;
+  right: 20px;
+  top: 75px;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -1692,7 +1696,6 @@ body.light .progress-wrap svg.progress-circle path {
 .switched .circle {
   left: 45px;
   box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
-  background: var(--black-blue);
 }
 .switched .circle:hover {
   box-shadow: 0 8px 8px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
