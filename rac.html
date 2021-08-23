@@ -1,83 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/splide-2.4.21/dist/css/splide.min.css">
-    <style>
-        .project-area {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto 30px auto;
-            padding: 0;
-            background: #fff;
-            box-shadow: 0 1px 8px rgb(55 55 55 / 15%);
-            overflow: hidden;
-        }
-
-        .project-area .project_container ul {
-            list-style: none;
-            width: 100%;
-            display: flex;
-        }
-
-        .project-area .project_container ul li {
-            width: 20%;
-            height: 500px;
-            text-align: center;
-            border-right: 1px solid #ececec;
-        }
-    </style>
-
-    <title>Document</title>
+    <link rel="stylesheet" href="./rac.css">
+    <title>RAC</title>
 </head>
+
 <body>
-    <div class="splide project-area">
-        <div class="splide__track project_container">
-            <ul class="splide__list">
-                <li class="splide__slide"><img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt=""></li>
-                <li class="splide__slide"><img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt=""></li>
-                <li class="splide__slide"><img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt=""></li>
-                <li class="splide__slide"><img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt=""></li>
-                <li class="splide__slide"><img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt=""></li>
-                <li class="splide__slide"><img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt=""></li>
-                <li class="splide__slide"><img src="../images/Alpha-Universe-Xperia-Pro-Jason-Vong-Livestream-DSC08592.jpeg" alt=""></li>
-            </ul>
-        </div>
-        <div class="splide__progress">
-            <div class="splide__progress__bar">
+    <div class="camera_boss">
+        <div class='camera-boss-container'>
+            <div class='camera_top'>
+                <div class='camera_top-zoom'></div>
+                <div class='camera_top-mode-changer'></div>
+                <div class='camera_top-sides'></div>
+                <div class='camera_top-range-finder'></div>
+                <div class='camera_top-focus'></div>
+                <div class='camera_top-red'></div>
+                <div class='camera_top-view-finder'></div>
+                <div class='camera_top-flash'>
+                    <div class='camera_top-light'></div>
+                </div>
             </div>
+            <div class='camera_mid'>
+                <div class='camera_mid-sensor'></div>
+                <div class='camera_mid-lens'></div>
+            </div>
+            <div class='camera-bottom'></div>
         </div>
     </div>
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "1414842395300980");
-        chatbox.setAttribute("attribution", "biz_inbox");
-
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v11.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <script src="/splide-2.4.21/dist/js/splide.min.js"></script>
-    <script src="../JS/rac.js"></script>
+    <script src="./rac.js"></script>
 </body>
+
 </html>

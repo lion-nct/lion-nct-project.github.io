@@ -15,11 +15,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- boxicons -->
     <link rel="stylesheet" href="./Project/fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="stylesheet" href="./Project/fontawesome-free-5.15.3-web/css/all.css">
-
     <!-- app css -->
     <link rel="stylesheet" href="./Project/ShopLion/Css/gird.css">
     <link rel="stylesheet" href="./Project/ShopLion/Css/main.css">
+    <link rel="stylesheet" href="./Project/ShopLion/Css/camera.css">
     <link rel="icon" href="./Project/ShopLion/images/logo.png">
     <link rel="stylesheet" href="./Project/splide-2.4.21/dist/css/splide-core.min.css">
     <!-- effects -->
@@ -27,7 +26,31 @@
     <!-- <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css"> -->
 </head>
 
-<body>
+<body class="loader-page">
+    <!-- LOADER PAGE -->
+    <div class="loader">
+        <div class="camera_boss">
+            <div class='camera-boss-container'>
+                <div class='camera_top'>
+                    <div class='camera_top-zoom'></div>
+                    <div class='camera_top-mode-changer'></div>
+                    <div class='camera_top-sides'></div>
+                    <div class='camera_top-range-finder'></div>
+                    <div class='camera_top-focus'></div>
+                    <div class='camera_top-red'></div>
+                    <div class='camera_top-view-finder'></div>
+                    <div class='camera_top-flash'>
+                        <div class='camera_top-light'></div>
+                    </div>
+                </div>
+                <div class='camera_mid'>
+                    <div class='camera_mid-sensor'></div>
+                    <div class='camera_mid-lens'></div>
+                </div>
+                <div class='camera-bottom'></div>
+            </div>
+        </div>
+    </div>
     <!-- header -->
     <header>
         <!-- MOBILE MENU -->
@@ -199,7 +222,7 @@
                                 </div>
                             </li>
                             <!-- end mega menu -->
-                            <li><a href="./product-detail.html" target="_blank">blog</a></li>
+                            <li><a href="./product-detail.html">blog</a></li>
                             <li><a href="#">contact</a></li>
                         </ul>
                         <ul class="main-menu main-menu-item">
@@ -450,7 +473,6 @@
         </div>
     </div>
     <!-- end hero section -->
-
     <!-- promotion section -->
     <div class="promotion">
         <div class="row">
@@ -507,6 +529,7 @@
             <div class="row" id="latest-products">
                 <!-- <div class="col-3 col-md-6 col-sm-12">
                     <div class="product-card">
+                        <img src="./Project/ShopLion/images/saleoff.png" class=""></img>
                         <div class="product-card-img">
                             <img src="./Project/ShopLion/images/bucket_SEL100400GM_0000_8ff00e4b015cefaaffa2c79dccc1f65c_1.png" alt="">
                             <img src="./Project/ShopLion/images/bucket_SEL200600G_0000_aa4c806667bb613cd7fbc9fa6ed7c6a3_1.png" alt="">
@@ -549,8 +572,9 @@
         <div class="particles-boss">
             <div class="row mb-product">
                 <div class="col-5 col-md-4 col-sm-12">
-                    <div class="sp-item-img" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                        <img src="./Project/ShopLion/images/bucket_ILCE7RM4_0000_001_7eff88fc0c7084cc40d088ec2a70f94c_1.png"
+                    <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                        <img class="sp-item-img"
+                            src="./Project/ShopLion/images/bucket_ILCE7RM4_0000_001_7eff88fc0c7084cc40d088ec2a70f94c_1.png"
                             alt="">
                     </div>
                 </div>
@@ -565,9 +589,10 @@
                             and remarkably high speed in a compact body. See how its enhanced rigidity and connectivity
                             raise your productivity.
                         </p>
-                        <button class="btn-flat btn-hover" data-aos="fade-up" data-aos-duration="900"><a
-                                href="./product-detail.html">shop
-                                now</a></button>
+                        <button data-aos="fade-up" data-aos-duration="900">
+                            <a class="btn-flat btn-hover" href="./product-detail.html"><span>shop now</span>
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -821,22 +846,24 @@
                 </a>
             </li>
     </div>
-    <div class="switch">
-        <div class="circle"></div>
-    </div>
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
+    <div class="light-top">
+        <div class="switch">
+            <div class="circle"></div>
+        </div>
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
     </div>
     <!-- Messenger Plugin chat Code -->
-<div class="cc">
-    <div id="fb-root"></div>
+    <div class="cc">
+        <div id="fb-root"></div>
 
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+        <!-- Your Plugin chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
     </div>
-</div>
     <!-- end footer -->
 
     <!-- app js -->
