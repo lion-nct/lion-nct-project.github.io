@@ -61,6 +61,26 @@ h2,
 h1 {
   text-transform: uppercase;
 }
+/* zoom */
+.thumbnails img {
+  max-width: 110px;
+}
+
+.mainphoto img {
+  max-width: 100%;
+}
+
+.zoom_01 {
+  border: 1px solid red;
+}
+
+img.data-zoom {
+  border: 4px solid black;
+}
+
+.mainphoto img[src] {
+  border: 3px solid #000;
+}
 
 #fb-root {
   z-index: 9999;

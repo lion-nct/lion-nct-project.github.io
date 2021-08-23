@@ -148,3 +148,5 @@ $("input.input-qty").each(function () {
     $this.attr("value", d).val(d);
   });
 });
+
+//zoom
