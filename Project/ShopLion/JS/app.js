@@ -21,5 +21,5 @@ document
 // JQUERY
 $(window).on("load", function (event) {
   $("body").removeClass("loader-page");
-  $(".loader").delay(1000).fadeOut("slow");
+  $(".loader").delay(1300).fadeOut("slow");
 });

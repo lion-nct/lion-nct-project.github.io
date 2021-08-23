@@ -1,4 +1,4 @@
-.loader{
+.loader {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -8,16 +8,12 @@
   background-color: white;
   overflow: hidden;
 }
-.camera_boss{
+.camera_boss {
   position: relative;
   width: 100%;
   height: 100%;
 }
-h1{
-  position: absolute;
-  top: 20%;
-  left: 40%;
-}
+
 .camera-boss-container {
   position: absolute;
   top: 50%;
@@ -503,3 +499,17 @@ h1{
     box-shadow: 0px 30px 50px -20px rgba(0, 0, 0, 0.7);
   }
 }
+section {
+  min-width: 200px;
+  width: 33.33%;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
