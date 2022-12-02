@@ -19,6 +19,7 @@ console.log(thanh2.indexOf("Công Thành"));
 // cắt từ vị trí..
 var thanh3 = "tôi tên là Nguyễn Công Thành";
 console.log(thanh3.slice(11));
+console.log(thanh3.slice(-3));
 
 // Viết tất cả thành in hoa
 var thanh4 = "tôi tên là Nguyễn Công Thành";
