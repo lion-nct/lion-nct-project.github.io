@@ -59,8 +59,8 @@ var products = [
       "./Project/ShopLion/images/bucket_SEL200600G_0000_aa4c806667bb613cd7fbc9fa6ed7c6a3_1.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL100400GM_0000_8ff00e4b015cefaaffa2c79dccc1f65c_1.png",
-    old_price: "540",
-    curr_price: "400",
+    old_price: "1800",
+    curr_price: "1600",
   },
   {
     name: "Lens Zoom G100-350mm",
@@ -68,8 +68,8 @@ var products = [
       "./Project/ShopLion/images/bucket_SEL1635Z_0000_e18ba6034d2e8cf52e09470d304a9708_1.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL1635Z_0001_23b249f0d220cd84317da24a836cee18.png",
-    old_price: "405",
-    curr_price: "300",
+    old_price: "1000",
+    curr_price: "700",
   },
   {
     name: "Lens Zoom G16-35mm ",
@@ -77,8 +77,8 @@ var products = [
       "./Project/ShopLion/images/bucket_SEL30M35_0000_29cc3abbce5a3b17571c44195424e731_1.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL30M35_0000_29cc3abbce5a3b17571c44195424e731_2.png",
-    old_price: "945",
-    curr_price: "750",
+    old_price: "1700",
+    curr_price: "1400",
   },
   {
     name: "Lens Zoom G24-70mm",
@@ -86,8 +86,8 @@ var products = [
       "./Project/ShopLion/images/bucket_SEL35F14GM_0000_001_0873f5a12fc94dde762c2a82fbe58284_2.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL35F14GM_0002_003_fae7af0d714a09d1d4399169f2ebbaad_1.png",
-    old_price: "540",
-    curr_price: "400",
+    old_price: "1200",
+    curr_price: "999",
   },
   {
     name: "Lens Zoom G24-70mm",
@@ -95,8 +95,8 @@ var products = [
       "./Project/ShopLion/images/bucket_SEL24F28G_0000_001_c22344c1d7a67bb6b6d60ab7c5221dd6.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL24F28G_0001_002_dad050cd740e093ea20afe0bff5ea120.png",
-    old_price: "880",
-    curr_price: "650",
+    old_price: "1400",
+    curr_price: "1200",
   },
   {
     name: "Lens Zoom G24-70mm",
@@ -104,8 +104,8 @@ var products = [
       "./Project/ShopLion/images/bucket_SEL20F28_0000_95849e2146760315cdb24e7bfb03d90a_1.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL20F28_0001_eaac5021161a212a898dd02cb23f5ef3.png",
-    old_price: "810",
-    curr_price: "600",
+    old_price: "1400",
+    curr_price: "1150",
   },
   {
     name: "Lens Zoom G100-350mm",
@@ -113,15 +113,15 @@ var products = [
       "./Project/ShopLion/images/bucket_SEL1635Z_0000_e18ba6034d2e8cf52e09470d304a9708_1.png",
     image2:
       "./Project/ShopLion/images/bucket_SEL1635Z_0001_23b249f0d220cd84317da24a836cee18.png",
-    old_price: "405",
-    curr_price: "300",
+    old_price: "900",
+    curr_price: "850",
   },
   {
     name: "Lens Zoom G24-35mm",
     image1: "./Project/ShopLion/images/bucket_001_SEL14F18GM_1.png",
     image2: "./Project/ShopLion/images/bucket_003_SEL14F18GM.png",
-    old_price: "1150",
-    curr_price: "850",
+    old_price: "1750",
+    curr_price: "1500",
   },
 ];
 
